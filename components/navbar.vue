@@ -1,10 +1,14 @@
 <!-- components/Navbar.vue -->
 <template>
   <nav class="sticky top-0 z-50 bg-white p-4">
-    <div class="container mx-auto flex  min-lg:items-center justify-between max-sm:text-[16px]">
+    <div
+      class="container mx-auto flex min-lg:items-center justify-between max-sm:text-[16px]">
       <!-- Logo -->
       <NuxtLink to="/" class="">
-        <img src="/assets/images/FintoryLogo.png" alt="logo" class=" max-sm:w-[60px] max-lg:w-[70px]  max-2xl:w-[100px] w-[100px]" />
+        <img
+          src="/assets/images/FintoryLogo.png"
+          alt="logo"
+          class="max-sm:w-[60px] max-lg:w-[70px] max-2xl:w-[100px] w-[100px]" />
       </NuxtLink>
 
       <!-- Hamburger Menu for Mobile -->
@@ -23,7 +27,7 @@
           :class="menuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'"
           class="transition-all duration-500 ease-in-out overflow-hidden md:overflow-visible md:flex md:max-h-full md:opacity-100 md:space-x-8 items-center">
           <ul
-            class="flex flex-col md:flex-row md:space-x-8 space-y-2 md:space-y-0 items-center text-right max-md:items-end max-lg:text-[12px]">
+            class="flex flex-col md:flex-row md:space-x-4 space-y-2 md:space-y-0 items-center text-right max-md:items-end max-md:text-[12px] max-lg:text-[14px] text-[16px]">
             <li>
               <NuxtLink to="#about-us" class="hover:text-primary">{{
                 $t("about_us")
@@ -42,15 +46,25 @@
               <NuxtLink to="#whyfintory">{{ $t("why_fintory") }}</NuxtLink>
               <Icon name="ic:round-expand-more" size="24px"></Icon>
             </li>
-            <li>
+            <li class="flex justify-center items-center">
               <!-- Conditionally show the current flag -->
-              <div @click="toggleLocale" class="cursor-pointer">
-                <Icon :name="currentFlag" size="36px" />
+              <div
+                @click="toggleLocale"
+                class="cursor-pointer flex justify-center items-center">
+                <Icon
+                  :name="currentFlag"
+                  class="max-sm:text-[20px] max-md:text-[22px] max-lg:text-[24px] max-xl:text-[26px] text-[36px]" />
               </div>
             </li>
+
             <li>
               <div class="bg-primary rounded-full p-2 text-white max-md:p-1">
-                <div class="m-2">{{ $t("schedule_demo") }}</div>
+                <a
+                  href="https://calendly.com/hengchomroeun3103/30min"
+                  target="_blank"
+                  class="m-2"
+                  >{{ $t("schedule_demo") }}</a
+                >
               </div>
             </li>
           </ul>
