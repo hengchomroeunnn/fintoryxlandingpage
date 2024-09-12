@@ -4,7 +4,7 @@
       <img src="/assets/images/FintoryLogo.png" alt="logo" class="w-[100px]" />
     </div>
     <div>
-      <div class="text-primary font-EN p-2 text-xl">About us</div>
+      <div class="text-primary font-EN p-2 text-xl font-semibold">About us</div>
       <div>
         <div>With us, you will get</div>
         <div>
@@ -18,7 +18,7 @@
       </div>
     </div>
     <div>
-      <div class="text-primary font-EN p-2 text-xl">Features</div>
+      <div class="text-primary font-EN p-2 text-xl font-semibold">Features</div>
       <div>
         <div>
           <ul class="list-decimal">
@@ -41,7 +41,7 @@
       </div>
     </div>
     <div>
-      <div class="text-primary font-EN p-2 text-xl">Pricing</div>
+      <div class="text-primary font-EN p-2 text-xl font-semibold">Pricing</div>
       <div>
         <div>
           <ul class="list-disc">
@@ -54,7 +54,7 @@
     </div>
     <div>
       <div>
-        <div class="text-primary font-EN p-2 text-xl">Contact us!</div>
+        <div class="text-primary font-EN p-2 text-xl font-semibold">Contact us!</div>
         <div>
           <div>
             <ul class="space-y-4">
@@ -96,18 +96,77 @@
       <!-- Registration Section -->
       <div class="pt-2">
         <h2 class="text-2xl font-bold py-2">Register Now!</h2>
-        <div class="flex">
+        <div class="flex space-x-2">
           <input
             id="email"
+            v-model="email"
             type="text"
-            class="w-[160px] px-2 h-[60px] border-2 border-gray-300 rounded-md focus:outline-none focus:border-primary"
+            class="w-[160px] text-md px-2 h-[40px] border-2 border-gray-300 rounded-md focus:outline-none focus:border-primary"
             placeholder="Get product first!" />
           <button
-            class="bg-primary p-4 rounded-md flex items-center justify-center">
+            @click="submitEmail"
+            class="h-[40px] bg-primary p-4 rounded-md flex items-center justify-center">
             <Icon name="mingcute:send-fill" class="text-white"></Icon>
           </button>
         </div>
       </div>
     </div>
   </div>
+  <div><hr class="" /></div>
+  <div class="flex justify-between p-4">
+    <div class="space-x-4 text-2xl">
+      <a href="">
+        <Icon class=" hover:bg-primary" name="ic:baseline-facebook"></Icon>
+      </a>
+      <a href="">
+        <Icon class=" hover:bg-primary" name="mdi:instagram"></Icon>
+      </a>
+      <a href="">
+        <Icon class=" hover:bg-primary" name="ic:baseline-telegram"></Icon>
+      </a>
+      <a href=""> <Icon class=" hover:bg-primary" name="tabler:phone"></Icon> </a
+      ><a href=""><Icon class=" hover:bg-primary" name="tabler:mail-filled"></Icon></a>
+    </div>
+    <div>Terms and Privacy Policy</div>
+    <div>© 2024 Fintory. All rights reserved.</div>
+  </div>
 </template>
+<script>
+import { collection, addDoc, Timestamp } from "firebase/firestore";
+
+export default {
+  data() {
+    return {
+      email: "",
+    };
+  },
+  methods: {
+    async submitEmail() {
+      if (!this.email) {
+        alert("Please enter an email address.");
+        return;
+      }
+
+      try {
+        // Access Firestore from Nuxt app context
+        const firestore = this.$firestore;
+
+        // Add email to Firestore
+        await addDoc(collection(firestore, "email"), {
+          email: this.email,
+          timestamp: Timestamp.fromDate(new Date()), // Use Timestamp for Firestore dates
+        });
+
+        // Clear the input field
+        this.email = "";
+
+        // Notify the user
+        alert("Email submitted successfully!");
+      } catch (error) {
+        console.error("Error submitting email:", error);
+        alert("Failed to submit email.");
+      }
+    },
+  },
+};
+</script>

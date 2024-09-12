@@ -1,42 +1,42 @@
 <template>
   <!-- Intro Section -->
-  <section id="" class="bg-gray-100">
+  <section id="" class="">
     <div class="container mx-auto text-center">
-      <div class="relative bg-text text-white">
+      <div class="relative bg-primary text-white rounded-3xl">
         <!-- Background Image and Overlay -->
-        <div class="absolute inset-0 opacity-60">
+        <div class="absolute inset-0 opacity-100">
           <img
             src="/assets/images/img-bg.png"
             alt="Inventory management background"
-            class="w-full h-full object-cover" />
+            class="w-full h-full object-cover rounded-3xl" />
         </div>
         <div class="relative z-10 flex justify-between p-8">
           <!-- Left Section -->
           <div class="w-full py-[100px] space-y-10">
-            <h2
+            <!-- <h2
               class="text-sm uppercase tracking-wider text-gray-300 text-left">
               Inventory Management Application
-            </h2>
-            <h1 class="text-5xl font-bold mt-2 text-primary text-left">
+            </h2> -->
+            <h1 class="text-[60px] font-bold mt-2 text-white text-left ">
               Fintory
             </h1>
-            <p class="mt-4 text-lg text-gray-200 text-left w-[300px]">
+            <p class="text-lg text-gray-200 text-left w-[300px]">
               Optimize Your Store's Inventory Management 24/7 and Everywhere
               With Your Mobile Devices.
             </p>
-            <hr class="my-10" />
+            <hr class="my-10 w-[300px]" />
 
             <div class="text-left flex items-center justify-between">
               <NuxtLink to="#about-us">Learn more</NuxtLink>
               <div class="">
                 <a
                   href="#"
-                  class="inline-block text-primary bg-white px-6 py-3 mr-4 rounded-full">
+                  class="inline-block text-primary font-medium bg-white px-6 py-3 mr-4 rounded-full">
                   Free Demo
                 </a>
                 <a
                   href="#"
-                  class="inline-block text-white bg-primary px-6 py-3 rounded-full">
+                  class="inline-block text-white font-medium bg-primary px-6 py-3 rounded-full">
                   Register Now
                 </a>
               </div>
@@ -52,11 +52,11 @@
       <h2 class="text-4xl font-bold mb-6 text-primary">With Fintory</h2>
       <div class="grid-cols-3 grid divide-x-2">
         <div class="flex flex-col items-center">
-          <div>No lose profit</div>
+          <div class=" text-boldText text-xl font-bold pb-4">No lose profit</div>
           <div>
             <svg
-              width="198"
-              height="198"
+              width="100"
+              height="100"
               viewBox="0 0 198 198"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -99,11 +99,11 @@
           </div>
         </div>
         <div class="flex flex-col items-center">
-          <div>Stock free</div>
+          <div class=" text-boldText text-xl font-bold pb-4">Stock free</div>
           <div>
             <svg
-              width="198"
-              height="198"
+              width="100"
+              height="100"
               viewBox="0 0 188 188"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -126,11 +126,11 @@
           </div>
         </div>
         <div class="flex flex-col items-center">
-          <div>No lose profit</div>
+          <div class=" text-boldText text-xl font-bold pb-4">No lose profit</div>
           <div>
             <svg
-              width="198"
-              height="198"
+              width="100"
+              height="100"
               viewBox="0 0 150 150"
               fill="none"
               xmlns="http://www.w3.org/2000/svg">

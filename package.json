@@ -12,9 +12,13 @@
   "dependencies": {
     "@nuxt/icon": "^1.5.1",
     "@nuxtjs/i18n": "^8.5.3",
+    "dotenv": "^16.4.5",
+    "firebase": "^10.13.1",
     "nuxt": "^3.13.0",
+    "nuxt-vuefire": "^1.0.4",
     "vue": "latest",
-    "vue-router": "latest"
+    "vue-router": "latest",
+    "vue-scrollto": "^2.20.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
