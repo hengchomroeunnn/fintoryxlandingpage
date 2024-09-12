@@ -4,7 +4,7 @@
     <div class="container mx-auto text-center">
       <div class="relative bg-text text-white rounded-3xl">
         <!-- Background Image and Overlay -->
-        <div class="absolute inset-0 opacity-50">
+        <div class="absolute inset-0 opacity-30">
           <img
             src="/assets/images/img-bg.png"
             alt="Inventory management background"
@@ -178,146 +178,148 @@
         <div class="text-3xl text-center font-bold text-text w-[900px]">
           {{ $t("our_aim") }}
         </div>
-        
       </div>
-      <div class="text-3xl text-center font-bold text-primary">{{ $t('feature') }}</div>
-      <div class="grid grid-cols-2 justify-center items-center space-x-4">
-        <div class="space-y-4">
-          <div class="flex items-center">
-            <div
-              class="w-[50px] h-[50px] bg-primary rounded-md flex justify-center items-center">
-              <Icon name="lucide:box" class="w-[80%] h-[80%] text-white" />
-            </div>
-          </div>
-          <div class="font-bold text-[18px] text-text">
-            {{ $t("feature_1") }}
-          </div>
-          <div class="w-2/3">{{ $t("pos") }}</div>
-        </div>
-        <div
-          class="flex-col rounded-md flex items-center justify-center shadow-lg p-8 text-white">
-          <!-- Background Image -->
-          <img
-            src="/assets/images/pos.png"
-            alt="Product Image"
-            class="relative inset-0 w-[30%]" />
-        </div>
+      <div class="text-3xl text-center font-bold text-primary">
+        {{ $t("feature") }}
       </div>
-
-      <div class="grid grid-cols-2 justify-center items-center space-x-4">
-        <div
-          class="flex-col rounded-md flex items-center justify-center shadow-lg p-8 text-white">
-          <!-- Background Image -->
-          <img
-            src="/assets/images/pos.png"
-            alt="Product Image"
-            class="relative inset-0 w-[30%]" />
-        </div>
-        <div class="space-y-4">
-          <div class="flex items-center">
-            <div
-              class="w-[50px] h-[50px] bg-primary rounded-md flex justify-center items-center">
-              <Icon name="uil:graph-bar" class="w-[80%] h-[80%] text-white" />
+      <div class="py-10">
+        <div class="grid grid-cols-2 justify-center items-center space-x-4">
+          <div class="space-y-4">
+            <div class="flex items-center">
+              <div
+                class="w-[50px] h-[50px] bg-primary rounded-md flex justify-center items-center">
+                <Icon name="lucide:box" class="w-[80%] h-[80%] text-white" />
+              </div>
             </div>
-          </div>
-          <div class="font-bold text-[18px] text-text">
-            {{ $t("feature_2") }}
-          </div>
-          <div class="w-2/3">{{ $t("high/low_demand_insights") }}</div>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-2 justify-center items-center space-x-4">
-        <div class="space-y-4">
-          <div class="flex items-center">
-            <div
-              class="w-[50px] h-[50px] bg-primary rounded-md flex justify-center items-center">
-              <Icon name="pajamas:expire" class="w-[80%] h-[80%] text-white" />
+            <div class="font-bold text-[18px] text-text">
+              {{ $t("feature_1") }}
             </div>
+            <div class="w-2/3">{{ $t("pos") }}</div>
           </div>
-          <div class="font-bold text-[18px] text-text">
-            {{ $t("feature_3") }}
+          <div
+            class="flex-col rounded-md flex items-center justify-center shadow-lg p-8 text-white">
+            <!-- Background Image -->
+            <img
+              src="/assets/images/pos.png"
+              alt="Product Image"
+              class="relative inset-0 w-[30%]" />
           </div>
-          <div class="w-2/3">{{ $t("expiry_notifications") }}</div>
         </div>
-        <div
-          class="flex-col rounded-md flex items-center justify-center shadow-lg p-8 text-white">
-          <!-- Background Image -->
-          <img
-            src="/assets/images/pos.png"
-            alt="Product Image"
-            class="relative inset-0 w-[30%]" />
-        </div>
-      </div>
-
-      <div class="grid grid-cols-2 justify-center items-center space-x-4">
-        <div
-          class="flex-col rounded-md flex items-center justify-center shadow-lg p-8 text-white">
-          <!-- Background Image -->
-          <img
-            src="/assets/images/pos.png"
-            alt="Product Image"
-            class="relative inset-0 w-[30%]" />
-        </div>
-        <div class="space-y-4">
-          <div class="flex items-center">
-            <div
-              class="w-[50px] h-[50px] bg-primary rounded-md flex justify-center items-center">
-              <Icon name="maki:warehouse" class="w-[80%] h-[80%] text-white" />
+        <div class="grid grid-cols-2 justify-center items-center space-x-4">
+          <div
+            class="flex-col rounded-md flex items-center justify-center shadow-lg p-8 text-white">
+            <!-- Background Image -->
+            <img
+              src="/assets/images/pos.png"
+              alt="Product Image"
+              class="relative inset-0 w-[30%]" />
+          </div>
+          <div class="space-y-4">
+            <div class="flex items-center">
+              <div
+                class="w-[50px] h-[50px] bg-primary rounded-md flex justify-center items-center">
+                <Icon name="uil:graph-bar" class="w-[80%] h-[80%] text-white" />
+              </div>
             </div>
-          </div>
-          <div class="font-bold text-[18px] text-text">
-            {{ $t("feature_4") }}
-          </div>
-          <div class="w-2/3">{{ $t("replenishment_alerts") }}</div>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-2 justify-center items-center space-x-4">
-        <div class="space-y-4">
-          <div class="flex items-center">
-            <div
-              class="w-[50px] h-[50px] bg-primary rounded-md flex justify-center items-center">
-              <Icon name="wpf:future" class="w-[80%] h-[80%] text-white" />
+            <div class="font-bold text-[18px] text-text">
+              {{ $t("feature_2") }}
             </div>
+            <div class="w-2/3">{{ $t("high/low_demand_insights") }}</div>
           </div>
-          <div class="font-bold text-[18px] text-text">
-            {{ $t("feature_4") }}
-          </div>
-          <div class="w-2/3">{{ $t("future_demand") }}</div>
         </div>
-        <div
-          class="flex-col rounded-md flex items-center justify-center shadow-lg p-8 text-white">
-          <!-- Background Image -->
-          <img
-            src="/assets/images/pos.png"
-            alt="Product Image"
-            class="relative inset-0 w-[30%]" />
-        </div>
-      </div>
-
-      <div class="grid grid-cols-2 justify-center items-center space-x-4">
-        <div
-          class="flex-col rounded-md flex items-center justify-center shadow-lg p-8 text-white">
-          <!-- Background Image -->
-          <img
-            src="/assets/images/pos.png"
-            alt="Product Image"
-            class="relative inset-0 w-[30%]" />
-        </div>
-        <div class="space-y-4">
-          <div class="flex items-center">
-            <div
-              class="w-[50px] h-[50px] bg-primary rounded-md flex justify-center items-center">
-              <Icon
-                name="tabler:file-text-ai"
-                class="w-[80%] h-[80%] text-white" />
+        <div class="grid grid-cols-2 justify-center items-center space-x-4">
+          <div class="space-y-4">
+            <div class="flex items-center">
+              <div
+                class="w-[50px] h-[50px] bg-primary rounded-md flex justify-center items-center">
+                <Icon
+                  name="pajamas:expire"
+                  class="w-[80%] h-[80%] text-white" />
+              </div>
             </div>
+            <div class="font-bold text-[18px] text-text">
+              {{ $t("feature_3") }}
+            </div>
+            <div class="w-2/3">{{ $t("expiry_notifications") }}</div>
           </div>
-          <div class="font-bold text-[18px] text-text">
-            {{ $t("feature_6") }}
+          <div
+            class="flex-col rounded-md flex items-center justify-center shadow-lg p-8 text-white">
+            <!-- Background Image -->
+            <img
+              src="/assets/images/pos.png"
+              alt="Product Image"
+              class="relative inset-0 w-[30%]" />
           </div>
-          <div class="w-2/3">{{ $t("AI") }}</div>
+        </div>
+        <div class="grid grid-cols-2 justify-center items-center space-x-4">
+          <div
+            class="flex-col rounded-md flex items-center justify-center shadow-lg p-8 text-white">
+            <!-- Background Image -->
+            <img
+              src="/assets/images/pos.png"
+              alt="Product Image"
+              class="relative inset-0 w-[30%]" />
+          </div>
+          <div class="space-y-4">
+            <div class="flex items-center">
+              <div
+                class="w-[50px] h-[50px] bg-primary rounded-md flex justify-center items-center">
+                <Icon
+                  name="maki:warehouse"
+                  class="w-[80%] h-[80%] text-white" />
+              </div>
+            </div>
+            <div class="font-bold text-[18px] text-text">
+              {{ $t("feature_4") }}
+            </div>
+            <div class="w-2/3">{{ $t("replenishment_alerts") }}</div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 justify-center items-center space-x-4">
+          <div class="space-y-4">
+            <div class="flex items-center">
+              <div
+                class="w-[50px] h-[50px] bg-primary rounded-md flex justify-center items-center">
+                <Icon name="wpf:future" class="w-[80%] h-[80%] text-white" />
+              </div>
+            </div>
+            <div class="font-bold text-[18px] text-text">
+              {{ $t("feature_4") }}
+            </div>
+            <div class="w-2/3">{{ $t("future_demand") }}</div>
+          </div>
+          <div
+            class="flex-col rounded-md flex items-center justify-center shadow-lg p-8 text-white">
+            <!-- Background Image -->
+            <img
+              src="/assets/images/pos.png"
+              alt="Product Image"
+              class="relative inset-0 w-[30%]" />
+          </div>
+        </div>
+        <div class="grid grid-cols-2 justify-center items-center space-x-4">
+          <div
+            class="flex-col rounded-md flex items-center justify-center shadow-lg p-8 text-white">
+            <!-- Background Image -->
+            <img
+              src="/assets/images/pos.png"
+              alt="Product Image"
+              class="relative inset-0 w-[30%]" />
+          </div>
+          <div class="space-y-4">
+            <div class="flex items-center">
+              <div
+                class="w-[50px] h-[50px] bg-primary rounded-md flex justify-center items-center">
+                <Icon
+                  name="tabler:file-text-ai"
+                  class="w-[80%] h-[80%] text-white" />
+              </div>
+            </div>
+            <div class="font-bold text-[18px] text-text">
+              {{ $t("feature_6") }}
+            </div>
+            <div class="w-2/3">{{ $t("AI") }}</div>
+          </div>
         </div>
       </div>
     </div>
@@ -328,7 +330,7 @@
       <div class="text-3xl text-white font-bold">{{ $t("why_fintory") }}?</div>
       <div class="text-white w-2/4 text-center">{{ $t("vp") }}</div>
     </div>
-    <div class="grid grid-cols-3">
+    <div class="grid grid-cols-3 p">
       <div class="p-8 space-y-2">
         <div
           class="w-[50px] h-[50px] bg-white rounded-md flex justify-center items-center">
@@ -403,65 +405,182 @@
   </section>
   <!-- Pricing Section -->
   <section class="bg-white">
-  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
       <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-primary">{{ $t('pricing') }}</h2>
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-primary">
+          {{ $t("pricing") }}
+        </h2>
       </div>
-      <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
-          <!-- Pricing Card -->
-          <div class="flex flex-col p-6 mx-auto max-w-lg text-center  bg-gray-800 rounded-lg border shadow  xl:p-8  text-white">
-              <h3 class="mb-4 text-2xl font-semibold">{{ $t('monthly_package') }}</h3>
-              <p class="font-light text-gray-500 sm:text-lg">Spend only $0.5 a day</p>
-              <div class="flex justify-center items-baseline my-8">
-                  <span class="mr-2 text-5xl font-extrabold">$15</span>
-                  <span class="text-gray-500">/month</span>
-              </div>
-              <!-- List -->
-              <ul role="list" class="mb-8 space-y-4 text-left">
-                  <li class="flex items-center space-x-3">
-                      <!-- Icon -->
-                      <svg class="flex-shrink-0 w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>{{ $t('all_features') }}</span>
-                  </li>
-              </ul>
-              <a href="#" class="text-white bg-primary font-medium rounded-lg text-sm px-5 py-2.5 text-center">{{ $t('register') }}</a>
+      <div
+        class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+        <!-- Pricing Card -->
+        <div
+          class="flex flex-col p-6 mx-auto max-w-lg text-center bg-gray-800 rounded-lg border shadow xl:p-8 text-white">
+          <h3 class="mb-4 text-2xl font-semibold">
+            {{ $t("monthly_package") }}
+          </h3>
+          <p class="font-light text-gray-500 sm:text-lg">
+            Spend only $0.5 a day
+          </p>
+          <div class="flex justify-center items-baseline my-8">
+            <span class="mr-2 text-5xl font-extrabold">$15</span>
+            <span class="text-gray-500">/month</span>
           </div>
-     <!-- Pricing Card -->
-     <div class="flex flex-col p-6 mx-auto max-w-lg text-center  bg-gray-800 rounded-lg border shadow  xl:p-8  text-white">
-              <h3 class="mb-4 text-2xl font-semibold">{{ $t('semester_package') }}</h3>
-              <p class="font-light text-gray-500 sm:text-lg">Spend only $0.425 a day</p>
-              <div class="flex justify-center items-baseline my-8">
-                  <span class="mr-2 text-5xl font-extrabold">$13</span>
-                  <span class="text-gray-500">/month</span>
-              </div>
-              <!-- List -->
-              <ul role="list" class="mb-8 space-y-4 text-left">
-                  <li class="flex items-center space-x-3">
-                      <!-- Icon -->
-                      <svg class="flex-shrink-0 w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>{{ $t('all_features') }}</span>
-                  </li>
-              </ul>
-              <a href="#" class="text-white bg-primary font-medium rounded-lg text-sm px-5 py-2.5 text-center">{{ $t('register') }}</a>
-          </div> <!-- Pricing Card -->
-          <div class="flex flex-col p-6 mx-auto max-w-lg text-center  bg-gray-800 rounded-lg border shadow  xl:p-8  text-white">
-              <h3 class="mb-4 text-2xl font-semibold">{{ $t('yearly_package') }}</h3>
-              <p class="font-light text-gray-500 sm:text-lg">Spend only $0.325 a day</p>
-              <div class="flex justify-center items-baseline my-8">
-                  <span class="mr-2 text-5xl font-extrabold">$10</span>
-                  <span class="text-gray-500">/month</span>
-              </div>
-              <!-- List -->
-              <ul role="list" class="mb-8 space-y-4 text-left">
-                  <li class="flex items-center space-x-3">
-                      <!-- Icon -->
-                      <svg class="flex-shrink-0 w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                      <span>{{ $t('all_features') }}</span>
-                  </li>
-              </ul>
-              <a href="#" class="text-white bg-primary font-medium rounded-lg text-sm px-5 py-2.5 text-center">{{ $t('register') }}</a>
+          <!-- List -->
+          <ul role="list" class="mb-8 space-y-4 text-left">
+            <li class="flex items-center space-x-3">
+              <!-- Icon -->
+              <svg
+                class="flex-shrink-0 w-5 h-5 text-primary"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>{{ $t("all_features") }}</span>
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="text-white bg-primary font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+            >{{ $t("register") }}</a
+          >
+        </div>
+        <!-- Pricing Card -->
+        <div
+          class="flex flex-col p-6 mx-auto max-w-lg text-center bg-gray-800 rounded-lg border shadow xl:p-8 text-white">
+          <h3 class="mb-4 text-2xl font-semibold">
+            {{ $t("semester_package") }}
+          </h3>
+          <p class="font-light text-gray-500 sm:text-lg">
+            Spend only $0.425 a day
+          </p>
+          <div class="flex justify-center items-baseline my-8">
+            <span class="mr-2 text-5xl font-extrabold">$13</span>
+            <span class="text-gray-500">/month</span>
           </div>
+          <!-- List -->
+          <ul role="list" class="mb-8 space-y-4 text-left">
+            <li class="flex items-center space-x-3">
+              <!-- Icon -->
+              <svg
+                class="flex-shrink-0 w-5 h-5 text-primary"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>{{ $t("all_features") }}</span>
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="text-white bg-primary font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+            >{{ $t("register") }}</a
+          >
+        </div>
+        <!-- Pricing Card -->
+        <div
+          class="flex flex-col p-6 mx-auto max-w-lg text-center bg-gray-800 rounded-lg border shadow xl:p-8 text-white">
+          <h3 class="mb-4 text-2xl font-semibold">
+            {{ $t("yearly_package") }}
+          </h3>
+          <p class="font-light text-gray-500 sm:text-lg">
+            Spend only $0.325 a day
+          </p>
+          <div class="flex justify-center items-baseline my-8">
+            <span class="mr-2 text-5xl font-extrabold">$10</span>
+            <span class="text-gray-500">/month</span>
+          </div>
+          <!-- List -->
+          <ul role="list" class="mb-8 space-y-4 text-left">
+            <li class="flex items-center space-x-3">
+              <!-- Icon -->
+              <svg
+                class="flex-shrink-0 w-5 h-5 text-primary"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>{{ $t("all_features") }}</span>
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="text-white bg-primary font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+            >{{ $t("register") }}</a
+          >
+        </div>
       </div>
-  </div>
-</section>
+    </div>
+  </section>
+  <!--Contact us-->
+  <section id="contact-us">
+    <section class="bg-primary">
+      <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+        <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-white">
+            {{ $t("contact-us") }}
+          </h2>
+        </div>
+        <p class="mb-8 lg:mb-16 font-light text-center text-white sm:text-xl">
+          Got a technical issue? Want to send feedback about a beta feature?
+          Need details about our Business plan? Let us know.
+        </p>
+        <form action="#" class="space-y-8">
+          <div>
+            <label for="email" class="block mb-2 text-sm font-medium text-white"
+              >Your email</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="shadow-sm border text-sm rounded-lg block w-full p-2.5 bg-white border-white placeholder-gray-400 text-text focus:ring-primary focus:border-primary shadow-sm-light"
+              placeholder="name@gmail.com"
+              required />
+          </div>
+          <div>
+            <label
+              for="subject"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >Subject</label
+            >
+            <input
+              type="text"
+              id="subject"
+              class="shadow-sm border text-sm rounded-lg block w-full p-2.5 bg-white border-white placeholder-gray-400 text-text focus:ring-primary focus:border-primary shadow-sm-light"
+              placeholder="Let us know how we can help you"
+              required />
+          </div>
+          <div class="sm:col-span-2">
+            <label
+              for="message"
+              class="block mb-2 text-sm font-medium text-white"
+              >Your message</label
+            >
+            <textarea
+              id="message"
+              rows="6"
+              class="shadow-sm border text-sm rounded-lg block w-full p-2.5 bg-white border-white placeholder-gray-400 text-text focus:ring-primary focus:border-primary shadow-sm-light"
+              placeholder="Leave a comment..."></textarea>
+          </div>
+          <button
+            type="submit"
+            class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg  sm:w-fit focus:ring-4 focus:outline-none focus:ring-primary bg-boldText">
+            Send message
+          </button>
+        </form>
+      </div>
+    </section>
+  </section>
 </template>

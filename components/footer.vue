@@ -1,4 +1,5 @@
 <template>
+  <hr>
   <div class="grid grid-cols-5 p-4 space-x-6">
     <div>
       <img src="/assets/images/FintoryLogo.png" alt="logo" class="w-[100px]" />
@@ -95,14 +96,14 @@
       </div>
       <!-- Registration Section -->
       <div class="pt-2">
-        <h2 class="text-2xl font-bold py-2">Register Now!</h2>
+        <h2 class="text-xl font-bold py-2">Early Access</h2>
         <div class="flex space-x-2">
           <input
             id="email"
             v-model="email"
             type="text"
             class="w-[160px] text-md px-2 h-[40px] border-2 border-gray-300 rounded-md focus:outline-none focus:border-primary"
-            placeholder="Get product first!" />
+            placeholder="name@gmail.com" />
           <button
             @click="submitEmail"
             class="h-[40px] bg-primary p-4 rounded-md flex items-center justify-center">
