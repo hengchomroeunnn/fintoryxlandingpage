@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "EN";
+  font-style: normal;
+  src: url(/assets/fonts/SF-PRO-DISPLAY-MEDIUM.ttf) format("truetype");
+}
+@font-face {
+    font-family: "EN-Normal";
+    font-style: normal;
+    src: url(/assets/fonts/SF-PRO.TTF) format("truetype");
+  }
+@font-face {
+  font-family: "KH";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/fonts/KH-BATTAMBANG.TTF) format("truetype");
+}
+.kh-font {
+  font-family: 'KH'; /* Font for Khmer */
+}
