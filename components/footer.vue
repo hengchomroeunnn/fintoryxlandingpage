@@ -99,7 +99,7 @@
     </div>
         <!-- Early Access Section -->
         <div class="pt-2 col-start-4 max-sm:col-span-4 max-xl:col-span-1 max-xl:col-start-4 max-md:col-span-2 max-md:col-start-3">
-      <h2 class="text-xl font-bold py-2">Early Access</h2>
+      <h2 class="text-xl font-bold py-2">{{ $t("early_access") }}</h2>
       <div class="flex   max-md:space-y-0 max-md:flex-row max-md:space-x-2">
         <input
           id="email"
