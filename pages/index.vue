@@ -57,9 +57,9 @@
   </section>
   <!-- Features Section -->
   <section id="features" class="flex items-center justify-center">
-    <div class="relative p-8 rounded-lg max-w-4xl flex items-center">
+    <div class="relative p-8 rounded-lg max-w-4xl flex items-center max-sm:grid max-sm:grid-cols-1">
       <!-- Description Text -->
-      <div class="w-1/2 pl-2">
+      <div class="w-1/2 pl-2 max-sm:w-full">
         <h2 class="text-3xl font-bold text-boldText">
           {{ $t("what_is_fintory") }}
         </h2>
@@ -158,13 +158,14 @@
             <li class="text-text">{{ $t("feature") }} 5: {{ $t("5") }}</li>
           </div>
         </ul>
-        <button class="mt-6 px-6 py-2 bg-primary text-white rounded-lg">
+        <div class=" flex justify-center">
+          <button class="mt-6 px-6 py-2 bg-primary text-white rounded-lg">
           {{ $t("learn_more") }}
         </button>
+        </div>
       </div>
-
       <!-- Phone Image -->
-      <div class="w-1/2 relative z-10">
+      <div class="w-1/2 relative z-10 max-sm:w-2/3">
         <img
           src="/assets/images/productadding.png"
           alt="Phone Image"
@@ -175,15 +176,15 @@
   <section id="value" class="flex items-center justify-center">
     <div class="space-y-2">
       <div class="flex justify-center p-4">
-        <div class="text-3xl text-center font-bold text-text w-[900px]">
+        <div class="text-3xl text-center font-bold text-text">
           {{ $t("our_aim") }}
         </div>
       </div>
       <div class="text-3xl text-center font-bold text-primary">
         {{ $t("feature") }}
       </div>
-      <div class="py-10">
-        <div class="grid grid-cols-2 justify-center items-center space-x-4">
+      <div class="py-10 max-md:space-y-[80px] max-md:flex max-md:flex-col">
+        <div class="grid grid-cols-2  max-md:grid-cols-1  justify-center items-center">
           <div class="space-y-4">
             <div class="flex items-center">
               <div
@@ -197,7 +198,7 @@
             <div class="w-2/3">{{ $t("pos") }}</div>
           </div>
           <div
-            class="flex-col rounded-md flex items-center justify-center shadow-lg p-8 text-white">
+            class="flex-col rounded-md flex items-center max-md:hidden justify-center shadow-lg p-8 text-white">
             <!-- Background Image -->
             <img
               src="/assets/images/pos.png"
@@ -205,9 +206,9 @@
               class="relative inset-0 w-[30%]" />
           </div>
         </div>
-        <div class="grid grid-cols-2 justify-center items-center space-x-4">
+        <div class="grid grid-cols-2  max-md:grid-cols-1   justify-center items-center">
           <div
-            class="flex-col rounded-md flex items-center justify-center shadow-lg p-8 text-white">
+            class="flex-col rounded-md flex items-center  max-md:hidden justify-center shadow-lg p-8 text-white">
             <!-- Background Image -->
             <img
               src="/assets/images/pos.png"
@@ -227,7 +228,7 @@
             <div class="w-2/3">{{ $t("high/low_demand_insights") }}</div>
           </div>
         </div>
-        <div class="grid grid-cols-2 justify-center items-center space-x-4">
+        <div class="grid grid-cols-2  max-md:grid-cols-1  justify-center items-center">
           <div class="space-y-4">
             <div class="flex items-center">
               <div
@@ -243,7 +244,7 @@
             <div class="w-2/3">{{ $t("expiry_notifications") }}</div>
           </div>
           <div
-            class="flex-col rounded-md flex items-center justify-center shadow-lg p-8 text-white">
+            class="flex-col rounded-md flex items-center max-md:hidden justify-center shadow-lg p-8 text-white">
             <!-- Background Image -->
             <img
               src="/assets/images/pos.png"
@@ -251,9 +252,9 @@
               class="relative inset-0 w-[30%]" />
           </div>
         </div>
-        <div class="grid grid-cols-2 justify-center items-center space-x-4">
+        <div class="grid grid-cols-2  max-md:grid-cols-1  justify-center items-center">
           <div
-            class="flex-col rounded-md flex items-center justify-center shadow-lg p-8 text-white">
+            class="flex-col rounded-md flex items-center max-md:hidden justify-center shadow-lg p-8 text-white">
             <!-- Background Image -->
             <img
               src="/assets/images/pos.png"
@@ -275,7 +276,7 @@
             <div class="w-2/3">{{ $t("replenishment_alerts") }}</div>
           </div>
         </div>
-        <div class="grid grid-cols-2 justify-center items-center space-x-4">
+        <div class="grid grid-cols-2  max-md:grid-cols-1  justify-center items-center">
           <div class="space-y-4">
             <div class="flex items-center">
               <div
@@ -289,7 +290,7 @@
             <div class="w-2/3">{{ $t("future_demand") }}</div>
           </div>
           <div
-            class="flex-col rounded-md flex items-center justify-center shadow-lg p-8 text-white">
+            class="flex-col rounded-md flex items-center max-md:hidden justify-center shadow-lg p-8 text-white">
             <!-- Background Image -->
             <img
               src="/assets/images/pos.png"
@@ -297,9 +298,9 @@
               class="relative inset-0 w-[30%]" />
           </div>
         </div>
-        <div class="grid grid-cols-2 justify-center items-center space-x-4">
+        <div class="grid grid-cols-2  max-md:grid-cols-1  justify-center items-center">
           <div
-            class="flex-col rounded-md flex items-center justify-center shadow-lg p-8 text-white">
+            class="flex-col rounded-md flex items-center max-md:hidden justify-center shadow-lg p-8 text-white">
             <!-- Background Image -->
             <img
               src="/assets/images/pos.png"
@@ -330,7 +331,7 @@
       <div class="text-3xl text-white font-bold">{{ $t("why_fintory") }}?</div>
       <div class="text-white w-2/4 text-center">{{ $t("vp") }}</div>
     </div>
-    <div class="grid grid-cols-3 p">
+    <div class="grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1">
       <div class="p-8 space-y-2">
         <div
           class="w-[50px] h-[50px] bg-white rounded-md flex justify-center items-center">
@@ -391,7 +392,7 @@
         <div class="text-white font-semibold">{{ $t("value_1") }}</div>
         <div class="text-white text-[14px]">{{ $t("smart_inventory") }}</div>
       </div>
-      <div class="p-8 space-y-2 col-start-2">
+      <div class="p-8 space-y-2 lg:col-start-2">
         <div
           class="w-[50px] h-[50px] bg-white rounded-md flex justify-center items-center">
           <Icon

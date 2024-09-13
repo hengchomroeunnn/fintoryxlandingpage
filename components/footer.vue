@@ -1,12 +1,12 @@
 <template>
-  <hr>
-  <div class="grid grid-cols-5 p-4 space-x-6">
+  <hr class="" />
+  <div class="grid grid-cols-4 p-4 ">
     <div>
-      <img src="/assets/images/FintoryLogo.png" alt="logo" class="w-[100px]" />
+      <img src="/assets/images/FintoryLogo.png" alt="logo" class="max-md:w-[60px] max-xl:w-[100px] w-[100px]" />
     </div>
-    <div>
+    <!-- <div>
       <div class="text-primary font-EN p-2 text-xl font-semibold">About us</div>
-      <div>
+      <div class=" max-md:hidden">
         <div>With us, you will get</div>
         <div>
           <ul class="list-disc pl-10">
@@ -17,21 +17,21 @@
           </ul>
         </div>
       </div>
-    </div>
+    </div> -->
     <div>
-      <div class="text-primary font-EN p-2 text-xl font-semibold">Features</div>
-      <div>
+      <div class="text-primary font-EN p-2 text-xl max-md:text-[16px] font-semibold">Features</div>
+      <div class="max-md:hidden">
         <div>
           <ul class="list-decimal">
             <li>POS system input input output output</li>
             <li>
               Inventory Management
-              <ul class="list-disc">
+              <!-- <ul class="list-disc">
                 <li>High demand products</li>
                 <li>Low demand products</li>
                 <li>Product is about to expire</li>
                 <li>Additional Completion Notice</li>
-              </ul>
+              </ul> -->
             </li>
             <li>Financial statements</li>
             <li>AI chat (real time)</li>
@@ -42,8 +42,8 @@
       </div>
     </div>
     <div>
-      <div class="text-primary font-EN p-2 text-xl font-semibold">Pricing</div>
-      <div>
+      <div class="text-primary font-EN p-2 text-xl max-md:text-[16px] font-semibold">Pricing</div>
+      <div class="max-md:hidden">
         <div>
           <ul class="list-disc">
             <li>$15 a Month</li>
@@ -55,8 +55,10 @@
     </div>
     <div>
       <div>
-        <div class="text-primary font-EN p-2 text-xl font-semibold">Contact us!</div>
-        <div>
+        <div class="text-primary font-EN p-2 text-xl max-md:text-[16px] font-semibold">
+          Contact us!
+        </div>
+        <div class="max-md:hidden">
           <div>
             <ul class="space-y-4">
               <li>
@@ -94,39 +96,41 @@
           </div>
         </div>
       </div>
-      <!-- Registration Section -->
-      <div class="pt-2">
-        <h2 class="text-xl font-bold py-2">Early Access</h2>
-        <div class="flex space-x-2">
-          <input
-            id="email"
-            v-model="email"
-            type="text"
-            class="w-[160px] text-md px-2 h-[40px] border-2 border-gray-300 rounded-md focus:outline-none focus:border-primary"
-            placeholder="name@gmail.com" />
-          <button
-            @click="submitEmail"
-            class="h-[40px] bg-primary p-4 rounded-md flex items-center justify-center">
-            <Icon name="mingcute:send-fill" class="text-white"></Icon>
-          </button>
-        </div>
+    </div>
+    <!-- Registration Section -->
+    <div class="pt-2 max-sm:col-span-1 max-lg:col-start-3 col-start-4">
+      <h2 class="text-xl font-bold py-2">Early Access</h2>
+      <div class="flex space-x-2">
+        <input
+          id="email"
+          v-model="email"
+          type="text"
+          class="text-md px-2 h-[40px] border-2 border-gray-300 rounded-md focus:outline-none focus:border-primary"
+          placeholder="name@gmail.com" />
+        <button
+          @click="submitEmail"
+          class="h-[40px] bg-primary px-4 rounded-md flex items-center justify-center">
+          <Icon name="mingcute:send-fill" class="text-white"></Icon>
+        </button>
       </div>
     </div>
   </div>
   <div><hr class="" /></div>
-  <div class="flex justify-between p-4">
-    <div class="space-x-4 text-2xl">
+  <div class="flex justify-between p-4 max-md:flex-col max-md:justify-center max-md:items-center max-md:space-y-4">
+    <div class="space-x-4 text-2xl ">
       <a href="">
-        <Icon class=" hover:bg-primary" name="ic:baseline-facebook"></Icon>
+        <Icon class="hover:bg-primary" name="ic:baseline-facebook"></Icon>
       </a>
       <a href="">
-        <Icon class=" hover:bg-primary" name="mdi:instagram"></Icon>
+        <Icon class="hover:bg-primary" name="mdi:instagram"></Icon>
       </a>
       <a href="">
-        <Icon class=" hover:bg-primary" name="ic:baseline-telegram"></Icon>
+        <Icon class="hover:bg-primary" name="ic:baseline-telegram"></Icon>
       </a>
-      <a href=""> <Icon class=" hover:bg-primary" name="tabler:phone"></Icon> </a
-      ><a href=""><Icon class=" hover:bg-primary" name="tabler:mail-filled"></Icon></a>
+      <a href=""> <Icon class="hover:bg-primary" name="tabler:phone"></Icon> </a
+      ><a href=""
+        ><Icon class="hover:bg-primary" name="tabler:mail-filled"></Icon
+      ></a>
     </div>
     <div>Terms and Privacy Policy</div>
     <div>© 2024 Fintory. All rights reserved.</div>
