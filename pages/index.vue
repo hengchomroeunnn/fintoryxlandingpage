@@ -84,7 +84,7 @@
                   d="m2.75 8.75l3.5 3.5l7-7.5" />
               </svg>
             </div>
-            <li class="text-text">{{ $t("feature") }} 1: {{ $t("1") }}</li>
+            <li class="text-text"> {{ $t("1") }}</li>
           </div>
           <div class="flex items-center">
             <div class="px-2 text-[#FFD700]">
@@ -102,7 +102,7 @@
                   d="m2.75 8.75l3.5 3.5l7-7.5" />
               </svg>
             </div>
-            <li class="text-text">{{ $t("feature") }} 2: {{ $t("2") }}</li>
+            <li class="text-text"> {{ $t("2") }}</li>
           </div>
           <div class="flex items-center">
             <div class="px-2 text-[#FFD700]">
@@ -120,7 +120,7 @@
                   d="m2.75 8.75l3.5 3.5l7-7.5" />
               </svg>
             </div>
-            <li class="text-text">{{ $t("feature") }} 3: {{ $t("3") }}</li>
+            <li class="text-text"> {{ $t("3") }}</li>
           </div>
           <div class="flex items-center">
             <div class="px-2 text-[#FFD700]">
@@ -138,7 +138,7 @@
                   d="m2.75 8.75l3.5 3.5l7-7.5" />
               </svg>
             </div>
-            <li class="text-text">{{ $t("feature") }} 4: {{ $t("4") }}</li>
+            <li class="text-text"> {{ $t("4") }}</li>
           </div>
           <div class="flex items-center">
             <div class="px-2 text-[#FFD700]">
@@ -156,7 +156,7 @@
                   d="m2.75 8.75l3.5 3.5l7-7.5" />
               </svg>
             </div>
-            <li class="text-text">{{ $t("feature") }} 5: {{ $t("5") }}</li>
+            <li class="text-text"> {{ $t("5") }}</li>
           </div>
         </ul>
         <div class="flex justify-center">
@@ -545,35 +545,35 @@
           </h2>
         </div>
         <p class="mb-4 lg:mb-16 font-light text-center text-white sm:text-xl">
-          {{ $t("contact_desc") }}
+          {{ $t("CTA") }}
         </p>
         <form @submit.prevent="submitContactForm" class="space-y-4">
           <div>
             <label
-              for="email"
+              for="phone_number"
               class="block mb-2 text-sm font-medium text-white"
-              >{{ $t("email") }}</label
+              >{{ $t("phone_number") }}</label
             >
             <input
-              type="email"
-              id="email"
-              v-model="email"
+              type="phone_number"
+              id="phone_number"
+              v-model="phone_number"
               class="shadow-sm border text-sm rounded-lg block w-full p-2.5 bg-white border-white placeholder-gray-400 text-text focus:ring-primary focus:border-primary shadow-sm-light"
-              placeholder="name@gmail.com"
+              placeholder="Your phone number or Telegram"
               required />
           </div>
           <div>
             <label
-              for="subject"
+              for="store"
               class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-              >{{ $t("subject") }}</label
+              >{{ $t("store") }}</label
             >
             <input
               type="text"
-              id="subject"
+              id="store"
               v-model="subject"
               class="shadow-sm border text-sm rounded-lg block w-full p-2.5 bg-white border-white placeholder-gray-400 text-text focus:ring-primary focus:border-primary shadow-sm-light"
-              placeholder="Let us know how we can help you"
+              placeholder="Your store name"
               required />
           </div>
           <div class="sm:col-span-2">
