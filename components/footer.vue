@@ -1,64 +1,41 @@
 <template>
   <hr class="" />
-  <div class="grid grid-cols-4 p-4 ">
+  <div class="grid grid-cols-5 p-4">
     <div>
-      <img src="/assets/images/FintoryLogo.png" alt="logo" class="max-md:w-[60px] max-xl:w-[100px] w-[100px]" />
-    </div>
-    <!-- <div>
-      <div class="text-primary font-EN p-2 text-xl font-semibold">About us</div>
-      <div class=" max-md:hidden">
-        <div>With us, you will get</div>
-        <div>
-          <ul class="list-disc pl-10">
-            <li>Effeciency</li>
-            <li>Low cost</li>
-            <li>Simply</li>
-            <li>Wasteless</li>
-          </ul>
-        </div>
-      </div>
-    </div> -->
-    <div>
-      <div class="text-primary font-EN p-2 text-xl max-md:text-[16px] font-semibold">Features</div>
-      <div class="max-md:hidden">
-        <div>
-          <ul class="list-decimal">
-            <li>POS system input input output output</li>
-            <li>
-              Inventory Management
-              <!-- <ul class="list-disc">
-                <li>High demand products</li>
-                <li>Low demand products</li>
-                <li>Product is about to expire</li>
-                <li>Additional Completion Notice</li>
-              </ul> -->
-            </li>
-            <li>Financial statements</li>
-            <li>AI chat (real time)</li>
-            <li>Inform customers, sales promotions</li>
-            <li>Donating spoiled food</li>
-          </ul>
-        </div>
-      </div>
+      <img
+        src="/assets/images/FintoryLogo.png"
+        alt="logo"
+        class="max-md:w-[60px] max-xl:w-[100px] w-[100px]" />
     </div>
     <div>
-      <div class="text-primary font-EN p-2 text-xl max-md:text-[16px] font-semibold">Pricing</div>
-      <div class="max-md:hidden">
-        <div>
-          <ul class="list-disc">
-            <li>$15 a Month</li>
-            <li>$13 for 6 Months</li>
-            <li>$10 for 12 Months</li>
-          </ul>
-        </div>
-      </div>
+      <NuxtLink
+        to="#about-us"
+        class="text-primary  p-2 text-xl max-md:text-[16px] font-semibold"
+        >  {{$t("about_us")}}</NuxtLink
+      >
     </div>
     <div>
-      <div>
-        <div class="text-primary font-EN p-2 text-xl max-md:text-[16px] font-semibold">
-          Contact us!
-        </div>
-        <div class="max-md:hidden">
+      <NuxtLink
+        to="#features"
+        class="text-primary  p-2 text-xl max-md:text-[16px] font-semibold"
+        >{{ $t("features") }}</NuxtLink
+      >
+    </div>
+    <div>
+      <NuxtLink
+        to="#pricing"
+        class="text-primary  p-2 text-xl max-md:text-[16px] font-semibold"
+        >  {{$t("pricing")}}</NuxtLink
+      >
+    </div>
+    <div>
+      <NuxtLink
+        to="#contact-us"
+        class="text-primary  p-2 text-xl max-md:text-[16px] font-semibold">
+        {{ $t('contact-us') }}
+      </NuxtLink>
+      <!-- <div>
+        <div class="">
           <div>
             <ul class="space-y-4">
               <li>
@@ -95,13 +72,15 @@
             </ul>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
-        <!-- Early Access Section -->
-        <div class="pt-2 col-start-4 max-sm:col-span-4 max-xl:col-span-1 max-xl:col-start-4 max-md:col-span-2 max-md:col-start-3">
+    <!-- Early Access Section -->
+    <div
+      class="pt-2 col-start-5 max-sm:col-span-5 max-xl:col-span-2 max-xl:col-start-4 max-md:col-span-3 max-md:col-start-4">
       <h2 class="text-xl font-bold py-2">Early Access</h2>
-      <div class="flex   max-md:space-y-0 max-md:flex-row max-md:space-x-2">
+      <div class="flex max-md:space-y-0 max-md:flex-row max-md:space-x-2">
         <input
+          @keydown.enter="submitEmail"
           id="email"
           v-model="email"
           type="text"
@@ -109,15 +88,31 @@
           placeholder="name@gmail.com" />
         <button
           @click="submitEmail"
-          class="h-[40px] bg-primary px-4 rounded-md flex items-center justify-center  max-md:w-auto">
+          class="h-[40px] bg-primary px-4 rounded-md flex items-center justify-center max-md:w-auto">
           <Icon name="mingcute:send-fill" class="text-white"></Icon>
+        </button>
+      </div>
+    </div>
+
+    <!-- Notify Dialog -->
+    <div
+      v-if="dialogVisible"
+      class="fixed inset-0 flex items-center justify-center z-50 bg-gray-800 bg-opacity-50">
+      <div class="bg-white rounded-lg shadow-lg p-6 max-w-sm w-full">
+        <h3 class="text-xl font-semibold mb-4">{{ dialogTitle }}</h3>
+        <p class="mb-4">{{ dialogMessage }}</p>
+        <button
+          @click="closeDialog"
+          class="w-full bg-primary text-white py-2 rounded-lg">
+          OK
         </button>
       </div>
     </div>
   </div>
   <div><hr class="" /></div>
-  <div class="flex justify-between p-4 max-md:flex-col max-md:justify-center max-md:items-center max-md:space-y-4">
-    <div class="space-x-4 text-2xl ">
+  <div
+    class="flex justify-between p-4 max-md:flex-col max-md:justify-center max-md:items-center max-md:space-y-4">
+    <div class="space-x-4 text-2xl">
       <a href="">
         <Icon class="hover:bg-primary" name="ic:baseline-facebook"></Icon>
       </a>
@@ -132,10 +127,11 @@
         ><Icon class="hover:bg-primary" name="tabler:mail-filled"></Icon
       ></a>
     </div>
-    <div>Terms and Privacy Policy</div>
-    <div>© 2024 Fintory. All rights reserved.</div>
+    <div>{{ $t('term_and_condition') }}</div>
+    <div>{{ $t('all_rights_reserved') }}</div>
   </div>
 </template>
+
 <script>
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 
@@ -143,12 +139,25 @@ export default {
   data() {
     return {
       email: "",
+      dialogVisible: false,
+      dialogTitle: "",
+      dialogMessage: "",
     };
   },
   methods: {
+    validateEmail(email) {
+      // Regular expression for basic email validation
+      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return re.test(email);
+    },
     async submitEmail() {
       if (!this.email) {
-        alert("Please enter an email address.");
+        this.showDialog("Error", "Please enter an email address.");
+        return;
+      }
+
+      if (!this.validateEmail(this.email)) {
+        this.showDialog("Error", "Please enter a valid email address.");
         return;
       }
 
@@ -166,11 +175,19 @@ export default {
         this.email = "";
 
         // Notify the user
-        alert("Email submitted successfully!");
+        this.showDialog("Success", "Email submitted successfully!");
       } catch (error) {
         console.error("Error submitting email:", error);
-        alert("Failed to submit email.");
+        this.showDialog("Error", "Failed to submit email.");
       }
+    },
+    showDialog(title, message) {
+      this.dialogTitle = title;
+      this.dialogMessage = message;
+      this.dialogVisible = true;
+    },
+    closeDialog() {
+      this.dialogVisible = false;
     },
   },
 };

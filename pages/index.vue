@@ -1,12 +1,12 @@
 <template>
   <!-- Intro Section -->
-  <section id="" class="">
+  <section id="homepage" class="">
     <div class="container mx-auto text-center">
       <div class="relative bg-text text-white rounded-3xl">
         <!-- Background Image and Overlay -->
         <div class="absolute inset-0 opacity-30">
           <img
-            src="/assets/images/img-bg.png"
+            src="/assets/images/img-bg-min.png"
             alt="Inventory management background"
             class="w-full h-full object-cover rounded-3xl" />
         </div>
@@ -56,8 +56,9 @@
     </div>
   </section>
   <!-- Features Section -->
-  <section id="features" class="flex items-center justify-center">
-    <div class="relative p-8 rounded-lg max-w-4xl flex items-center max-sm:grid max-sm:grid-cols-1">
+  <section id="about-us" class="flex items-center justify-center">
+    <div
+      class="relative p-8 rounded-lg max-w-4xl flex items-center max-sm:grid max-sm:grid-cols-1">
       <!-- Description Text -->
       <div class="w-1/2 pl-2 max-sm:w-full">
         <h2 class="text-3xl font-bold text-boldText">
@@ -158,10 +159,10 @@
             <li class="text-text">{{ $t("feature") }} 5: {{ $t("5") }}</li>
           </div>
         </ul>
-        <div class=" flex justify-center">
+        <div class="flex justify-center">
           <button class="mt-6 px-6 py-2 bg-primary text-white rounded-lg">
-          {{ $t("learn_more") }}
-        </button>
+            {{ $t("learn_more") }}
+          </button>
         </div>
       </div>
       <!-- Phone Image -->
@@ -173,7 +174,7 @@
       </div>
     </div>
   </section>
-  <section id="value" class="flex items-center justify-center">
+  <section id="features" class="flex items-center justify-center">
     <div class="space-y-2">
       <div class="flex justify-center p-4">
         <div class="text-3xl text-center font-bold text-text">
@@ -184,7 +185,8 @@
         {{ $t("feature") }}
       </div>
       <div class="py-10 max-md:space-y-[80px] max-md:flex max-md:flex-col">
-        <div class="grid grid-cols-2  max-md:grid-cols-1  justify-center items-center">
+        <div
+          class="grid grid-cols-2 max-md:grid-cols-1 justify-center items-center">
           <div class="space-y-4">
             <div class="flex items-center">
               <div
@@ -206,9 +208,10 @@
               class="relative inset-0 w-[30%]" />
           </div>
         </div>
-        <div class="grid grid-cols-2  max-md:grid-cols-1   justify-center items-center">
+        <div
+          class="grid grid-cols-2 max-md:grid-cols-1 justify-center items-center">
           <div
-            class="flex-col rounded-md flex items-center  max-md:hidden justify-center shadow-lg p-8 text-white">
+            class="flex-col rounded-md flex items-center max-md:hidden justify-center shadow-lg p-8 text-white">
             <!-- Background Image -->
             <img
               src="/assets/images/pos.png"
@@ -228,7 +231,8 @@
             <div class="w-2/3">{{ $t("high/low_demand_insights") }}</div>
           </div>
         </div>
-        <div class="grid grid-cols-2  max-md:grid-cols-1  justify-center items-center">
+        <div
+          class="grid grid-cols-2 max-md:grid-cols-1 justify-center items-center">
           <div class="space-y-4">
             <div class="flex items-center">
               <div
@@ -252,7 +256,8 @@
               class="relative inset-0 w-[30%]" />
           </div>
         </div>
-        <div class="grid grid-cols-2  max-md:grid-cols-1  justify-center items-center">
+        <div
+          class="grid grid-cols-2 max-md:grid-cols-1 justify-center items-center">
           <div
             class="flex-col rounded-md flex items-center max-md:hidden justify-center shadow-lg p-8 text-white">
             <!-- Background Image -->
@@ -276,7 +281,8 @@
             <div class="w-2/3">{{ $t("replenishment_alerts") }}</div>
           </div>
         </div>
-        <div class="grid grid-cols-2  max-md:grid-cols-1  justify-center items-center">
+        <div
+          class="grid grid-cols-2 max-md:grid-cols-1 justify-center items-center">
           <div class="space-y-4">
             <div class="flex items-center">
               <div
@@ -298,7 +304,8 @@
               class="relative inset-0 w-[30%]" />
           </div>
         </div>
-        <div class="grid grid-cols-2  max-md:grid-cols-1  justify-center items-center">
+        <div
+          class="grid grid-cols-2 max-md:grid-cols-1 justify-center items-center">
           <div
             class="flex-col rounded-md flex items-center max-md:hidden justify-center shadow-lg p-8 text-white">
             <!-- Background Image -->
@@ -326,7 +333,7 @@
     </div>
   </section>
   <!--Value Section-->
-  <section id="value" class="bg-primary">
+  <section id="why_fintory" class="bg-primary">
     <div class="p-4 space-y-4 flex flex-col items-center justify-center">
       <div class="text-3xl text-white font-bold">{{ $t("why_fintory") }}?</div>
       <div class="text-white w-2/4 text-center">{{ $t("vp") }}</div>
@@ -405,7 +412,7 @@
     </div>
   </section>
   <!-- Pricing Section -->
-  <section class="bg-white">
+  <section id="pricing" class="bg-white">
     <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
       <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-primary">
@@ -529,16 +536,16 @@
   <section id="contact-us">
     <section class="bg-primary">
       <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-        <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-white">
+        <div class="mx-auto max-w-screen-md text-center mb-4">
+          <h2 class="text-4xl tracking-tight font-extrabold text-white">
             {{ $t("contact-us") }}
           </h2>
         </div>
-        <p class="mb-8 lg:mb-16 font-light text-center text-white sm:text-xl">
+        <p class=" mb-4 font-light text-center text-white sm:text-xl">
           Got a technical issue? Want to send feedback about a beta feature?
           Need details about our Business plan? Let us know.
         </p>
-        <form action="#" class="space-y-8">
+        <form @submit.prevent="submitContactForm" class="space-y-4">
           <div>
             <label for="email" class="block mb-2 text-sm font-medium text-white"
               >Your email</label
@@ -546,6 +553,7 @@
             <input
               type="email"
               id="email"
+              v-model="email"
               class="shadow-sm border text-sm rounded-lg block w-full p-2.5 bg-white border-white placeholder-gray-400 text-text focus:ring-primary focus:border-primary shadow-sm-light"
               placeholder="name@gmail.com"
               required />
@@ -553,12 +561,13 @@
           <div>
             <label
               for="subject"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
               >Subject</label
             >
             <input
               type="text"
               id="subject"
+              v-model="subject"
               class="shadow-sm border text-sm rounded-lg block w-full p-2.5 bg-white border-white placeholder-gray-400 text-text focus:ring-primary focus:border-primary shadow-sm-light"
               placeholder="Let us know how we can help you"
               required />
@@ -571,17 +580,88 @@
             >
             <textarea
               id="message"
+              v-model="message"
               rows="6"
               class="shadow-sm border text-sm rounded-lg block w-full p-2.5 bg-white border-white placeholder-gray-400 text-text focus:ring-primary focus:border-primary shadow-sm-light"
               placeholder="Leave a comment..."></textarea>
           </div>
           <button
             type="submit"
-            class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg  sm:w-fit focus:ring-4 focus:outline-none focus:ring-primary bg-boldText">
+            class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg sm:w-fit focus:ring-4 focus:outline-none focus:ring-primary bg-boldText">
             Send message
           </button>
         </form>
       </div>
     </section>
   </section>
+  <!-- Success Dialog -->
+  <div
+    v-if="showDialog"
+    class="fixed inset-0 flex items-center justify-center z-50">
+    <div class="bg-white rounded-lg shadow-lg p-6 max-w-sm w-full mx-4">
+      <div class="text-center">
+        <h3 class="text-lg font-semibold text-gray-800 mb-2">Message Sent!</h3>
+        <p class="text-sm text-gray-600">
+          Your message has been successfully sent. We will get back to you
+          shortly.
+        </p>
+      </div>
+      <div class="mt-4 flex justify-center">
+        <button
+          @click="closeDialog"
+          class="py-2 px-4 bg-primary text-white rounded-md hover:bg-boldText focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+          OK
+        </button>
+      </div>
+    </div>
+  </div>
 </template>
+<script>
+import { collection, addDoc, Timestamp } from "firebase/firestore";
+
+export default {
+  data() {
+    return {
+      email: "",
+      subject: "",
+      message: "",
+      showDialog: false, // State to show/hide dialog
+    };
+  },
+  methods: {
+    async submitContactForm() {
+      if (!this.email || !this.subject || !this.message) {
+        alert("Please fill in all fields.");
+        return;
+      }
+
+      try {
+        // Access Firestore from Nuxt app context
+        const firestore = this.$firestore;
+
+        // Add contact form data to Firestore
+        await addDoc(collection(firestore, "message"), {
+          email: this.email,
+          subject: this.subject,
+          message: this.message,
+          timestamp: Timestamp.fromDate(new Date()), // Use Timestamp for Firestore dates
+        });
+
+        // Clear the form fields
+        this.email = "";
+        this.subject = "";
+        this.message = "";
+
+        // Show success dialog
+        this.showDialog = true;
+      } catch (error) {
+        console.error("Error submitting contact form:", error);
+        alert("Failed to send message.");
+      }
+    },
+    closeDialog() {
+      this.showDialog = false;
+    },
+  },
+};
+</script>
