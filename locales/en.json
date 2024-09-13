@@ -65,7 +65,18 @@
     "FAQs": "FAQs",
     "support_center": "Support Center",
     "term_and_condition": "Terms and Privacy Policy",
-    "all_rights_reserved": "© 2024 Fintory. All rights reserved."
+    "monthly_spend": "Spend only $0.5 a day",
+    "semaster_spend": "Spend only $0.425 a day",
+    "yearly_spend": "Spend only $0.325 a day" ,
+    "month": "month",
+    "contact_desc":"If you are a convenience store owner facing inventory management problems, reach out to us as soon as possible",
+    "email":"Your email",
+    "subject":"Subject" ,
+    "urmassage": "Your Message",
+    "send_message" : "send message",
+    "early_access" :"Early Access"
+
+
   }
  
 

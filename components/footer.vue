@@ -74,11 +74,10 @@
         </div>
       </div> -->
     </div>
-    <!-- Early Access Section -->
-    <div
-      class="pt-2 col-start-5 max-sm:col-span-5 max-xl:col-span-2 max-xl:col-start-4 max-md:col-span-3 max-md:col-start-4">
-      <h2 class="text-xl font-bold py-2">Early Access</h2>
-      <div class="flex max-md:space-y-0 max-md:flex-row max-md:space-x-2">
+        <!-- Early Access Section -->
+        <div class="pt-2 col-start-5 max-sm:col-span-5 max-xl:col-span-2 max-xl:col-start-4 max-md:col-span-3 max-md:col-start-4">
+      <h2 class="text-xl font-bold py-2">{{ $t("early_access") }}</h2>
+      <div class="flex   max-md:space-y-0 max-md:flex-row max-md:space-x-2">
         <input
           @keydown.enter="submitEmail"
           id="email"

@@ -203,9 +203,9 @@
             class="flex-col rounded-md flex items-center max-md:hidden justify-center shadow-lg p-8 text-white">
             <!-- Background Image -->
             <img
-              src="/assets/images/pos.png"
+              src="/assets/images/POS system input output.png"
               alt="Product Image"
-              class="relative inset-0 w-[30%]" />
+              class="relative inset-0 w-[50%]" />
           </div>
         </div>
         <div
@@ -214,9 +214,9 @@
             class="flex-col rounded-md flex items-center max-md:hidden justify-center shadow-lg p-8 text-white">
             <!-- Background Image -->
             <img
-              src="/assets/images/pos.png"
+              src="/assets/images/High low product recommendation.png"
               alt="Product Image"
-              class="relative inset-0 w-[30%]" />
+              class="relative inset-0 w-[40%]" />
           </div>
           <div class="space-y-4">
             <div class="flex items-center">
@@ -251,9 +251,9 @@
             class="flex-col rounded-md flex items-center max-md:hidden justify-center shadow-lg p-8 text-white">
             <!-- Background Image -->
             <img
-              src="/assets/images/pos.png"
+              src="/assets/images/Near-Expiry product.png"
               alt="Product Image"
-              class="relative inset-0 w-[30%]" />
+              class="relative inset-0 w-[50%]" />
           </div>
         </div>
         <div
@@ -262,9 +262,9 @@
             class="flex-col rounded-md flex items-center max-md:hidden justify-center shadow-lg p-8 text-white">
             <!-- Background Image -->
             <img
-              src="/assets/images/pos.png"
+              src="/assets/images/Replenishment.png"
               alt="Product Image"
-              class="relative inset-0 w-[30%]" />
+              class="relative inset-0 w-[40%]" />
           </div>
           <div class="space-y-4">
             <div class="flex items-center">
@@ -291,7 +291,7 @@
               </div>
             </div>
             <div class="font-bold text-[18px] text-text">
-              {{ $t("feature_4") }}
+              {{ $t("feature_5") }}
             </div>
             <div class="w-2/3">{{ $t("future_demand") }}</div>
           </div>
@@ -299,9 +299,9 @@
             class="flex-col rounded-md flex items-center max-md:hidden justify-center shadow-lg p-8 text-white">
             <!-- Background Image -->
             <img
-              src="/assets/images/pos.png"
+              src="/assets/images/Future recommendation.png"
               alt="Product Image"
-              class="relative inset-0 w-[30%]" />
+              class="relative inset-0 w-[50%]" />
           </div>
         </div>
         <div
@@ -310,9 +310,9 @@
             class="flex-col rounded-md flex items-center max-md:hidden justify-center shadow-lg p-8 text-white">
             <!-- Background Image -->
             <img
-              src="/assets/images/pos.png"
+              src="/assets/images/ai chatbot.png"
               alt="Product Image"
-              class="relative inset-0 w-[30%]" />
+              class="relative inset-0 w-[40%]" />
           </div>
           <div class="space-y-4">
             <div class="flex items-center">
@@ -353,61 +353,61 @@
         <div
           class="w-[50px] h-[50px] bg-white rounded-md flex justify-center items-center">
           <Icon
-            name="solar:smart-vacuum-cleaner-bold-duotone"
+            name="material-symbols:money-bag"
             class="w-[80%] h-[80%] text-primary"></Icon>
         </div>
-        <div class="text-white font-semibold">{{ $t("value_1") }}</div>
-        <div class="text-white text-[14px]">{{ $t("smart_inventory") }}</div>
+        <div class="text-white font-semibold">{{ $t("value_2") }}</div>
+        <div class="text-white text-[14px]">{{ $t("profit") }}</div>
       </div>
       <div class="p-8 space-y-2">
         <div
           class="w-[50px] h-[50px] bg-white rounded-md flex justify-center items-center">
           <Icon
-            name="solar:smart-vacuum-cleaner-bold-duotone"
+            name="arcticons:ai-chat"
             class="w-[80%] h-[80%] text-primary"></Icon>
         </div>
-        <div class="text-white font-semibold">{{ $t("value_1") }}</div>
-        <div class="text-white text-[14px]">{{ $t("smart_inventory") }}</div>
+        <div class="text-white font-semibold">{{ $t("value_3") }}</div>
+        <div class="text-white text-[14px]">{{ $t("AI_chat") }}</div>
       </div>
       <div class="p-8 space-y-2">
         <div
           class="w-[50px] h-[50px] bg-white rounded-md flex justify-center items-center">
           <Icon
-            name="solar:smart-vacuum-cleaner-bold-duotone"
+            name="carbon:sustainability"
             class="w-[80%] h-[80%] text-primary"></Icon>
         </div>
-        <div class="text-white font-semibold">{{ $t("value_1") }}</div>
-        <div class="text-white text-[14px]">{{ $t("smart_inventory") }}</div>
+        <div class="text-white font-semibold">{{ $t("value_4") }}</div>
+        <div class="text-white text-[14px]">{{ $t("sustainability") }}</div>
       </div>
       <div class="p-8 space-y-2">
         <div
           class="w-[50px] h-[50px] bg-white rounded-md flex justify-center items-center">
           <Icon
-            name="solar:smart-vacuum-cleaner-bold-duotone"
+            name="streamline:discount-percent-circle"
             class="w-[80%] h-[80%] text-primary"></Icon>
         </div>
-        <div class="text-white font-semibold">{{ $t("value_1") }}</div>
-        <div class="text-white text-[14px]">{{ $t("smart_inventory") }}</div>
+        <div class="text-white font-semibold">{{ $t("value_5") }}</div>
+        <div class="text-white text-[14px]">{{ $t("discounts") }}</div>
       </div>
       <div class="p-8 space-y-2">
         <div
           class="w-[50px] h-[50px] bg-white rounded-md flex justify-center items-center">
           <Icon
-            name="solar:smart-vacuum-cleaner-bold-duotone"
+            name="material-symbols:money-off-rounded"
             class="w-[80%] h-[80%] text-primary"></Icon>
         </div>
-        <div class="text-white font-semibold">{{ $t("value_1") }}</div>
-        <div class="text-white text-[14px]">{{ $t("smart_inventory") }}</div>
+        <div class="text-white font-semibold">{{ $t("value_6") }}</div>
+        <div class="text-white text-[14px]">{{ $t("installation") }}</div>
       </div>
       <div class="p-8 space-y-2 lg:col-start-2">
         <div
           class="w-[50px] h-[50px] bg-white rounded-md flex justify-center items-center">
           <Icon
-            name="solar:smart-vacuum-cleaner-bold-duotone"
+            name="cbi:movies-anywhere"
             class="w-[80%] h-[80%] text-primary"></Icon>
         </div>
-        <div class="text-white font-semibold">{{ $t("value_1") }}</div>
-        <div class="text-white text-[14px]">{{ $t("smart_inventory") }}</div>
+        <div class="text-white font-semibold">{{ $t("value_7") }}</div>
+        <div class="text-white text-[14px]">{{ $t("anytime_anywhere") }}</div>
       </div>
     </div>
   </section>
@@ -428,11 +428,11 @@
             {{ $t("monthly_package") }}
           </h3>
           <p class="font-light text-gray-500 sm:text-lg">
-            Spend only $0.5 a day
+            {{ $t("monthly_spend") }}
           </p>
           <div class="flex justify-center items-baseline my-8">
             <span class="mr-2 text-5xl font-extrabold">$15</span>
-            <span class="text-gray-500">/month</span>
+            <span class="text-gray-500">/{{ $t("month") }}</span>
           </div>
           <!-- List -->
           <ul role="list" class="mb-8 space-y-4 text-left">
@@ -464,11 +464,11 @@
             {{ $t("semester_package") }}
           </h3>
           <p class="font-light text-gray-500 sm:text-lg">
-            Spend only $0.425 a day
+            {{ $t("semaster_spend") }}
           </p>
           <div class="flex justify-center items-baseline my-8">
             <span class="mr-2 text-5xl font-extrabold">$13</span>
-            <span class="text-gray-500">/month</span>
+            <span class="text-gray-500">/{{ $t("month") }}</span>
           </div>
           <!-- List -->
           <ul role="list" class="mb-8 space-y-4 text-left">
@@ -496,15 +496,15 @@
         <!-- Pricing Card -->
         <div
           class="flex flex-col p-6 mx-auto max-w-lg text-center bg-gray-800 rounded-lg border shadow xl:p-8 text-white">
-          <h3 class="mb-4 text-2xl font-semibold">
+          <h3 class="mb-4 text-2xl font-semibold"s>
             {{ $t("yearly_package") }}
           </h3>
           <p class="font-light text-gray-500 sm:text-lg">
-            Spend only $0.325 a day
+            {{ $t("yearly_spend") }}
           </p>
           <div class="flex justify-center items-baseline my-8">
             <span class="mr-2 text-5xl font-extrabold">$10</span>
-            <span class="text-gray-500">/month</span>
+            <span class="text-gray-500">/{{ $t("month") }}</span>
           </div>
           <!-- List -->
           <ul role="list" class="mb-8 space-y-4 text-left">
@@ -541,14 +541,13 @@
             {{ $t("contact-us") }}
           </h2>
         </div>
-        <p class=" mb-4 font-light text-center text-white sm:text-xl">
-          Got a technical issue? Want to send feedback about a beta feature?
-          Need details about our Business plan? Let us know.
+        <p class="mb-4 lg:mb-16 font-light text-center text-white sm:text-xl">
+          {{ $t("contact_desc") }}
         </p>
         <form @submit.prevent="submitContactForm" class="space-y-4">
           <div>
             <label for="email" class="block mb-2 text-sm font-medium text-white"
-              >Your email</label
+              >{{$t("email")}}</label
             >
             <input
               type="email"
@@ -562,7 +561,7 @@
             <label
               for="subject"
               class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-              >Subject</label
+              >{{$t("subject")}}</label
             >
             <input
               type="text"
@@ -576,7 +575,7 @@
             <label
               for="message"
               class="block mb-2 text-sm font-medium text-white"
-              >Your message</label
+              >{{ $t("urmassage") }}</label
             >
             <textarea
               id="message"
@@ -587,8 +586,8 @@
           </div>
           <button
             type="submit"
-            class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg sm:w-fit focus:ring-4 focus:outline-none focus:ring-primary bg-boldText">
-            Send message
+            class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg  sm:w-fit focus:ring-4 focus:outline-none focus:ring-primary bg-boldText">
+            {{$t("send_message")}}
           </button>
         </form>
       </div>
