@@ -565,7 +565,7 @@
           <div>
             <label
               for="store"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              class="block mb-2 text-sm font-medium text-white"
               >{{ $t("store") }}</label
             >
             <input
@@ -591,7 +591,7 @@
           </div>
           <button
             type="submit"
-            class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg sm:w-fit focus:ring-4 focus:outline-none focus:ring-primary bg-boldText">
+            class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg sm:w-fit focus:ring-4 focus:outline-none focus:ring-primary  bg-gray-800">
             {{ $t("send_message") }}
           </button>
         </form>
