@@ -166,22 +166,23 @@
         </div>
       </div>
       <!-- Phone Image -->
-      <div class="w-1/2 relative max-sm:flex max-sm:items-center max-sm:justify-center z-10 max-sm:w-2/3">
+      <div
+        class="w-1/2 relative max-sm:flex max-sm:items-center max-sm:justify-center z-10 max-sm:w-2/3">
         <img
           src="/assets/images/productadding.png"
           alt="Phone Image"
-          class="w-full max-sm:ml-16 h-auto object-cover " />
+          class="w-full max-sm:ml-16 h-auto object-cover" />
       </div>
     </div>
   </section>
   <section id="features" class="flex items-center justify-center">
     <div class="space-y-2">
       <div class="flex justify-center p-4">
-        <div class="text-3xl text-center font-bold text-text">
+        <div class="text-3xl text-center font-bold text-text max-sm:text-xl">
           {{ $t("our_aim") }}
         </div>
       </div>
-      <div class="text-3xl text-center font-bold text-primary">
+      <div class="text-3xl text-center font-bold text-primary max-sm:text-xl">
         {{ $t("feature") }}
       </div>
       <div class="py-10 max-md:space-y-[80px] max-md:flex max-md:flex-col">
@@ -335,7 +336,9 @@
   <!--Value Section-->
   <section id="why_fintory" class="bg-primary">
     <div class="p-4 space-y-4 flex flex-col items-center justify-center">
-      <div class="text-3xl text-white font-bold">{{ $t("why_fintory") }}?</div>
+      <div class="text-3xl text-white font-bold max-sm:text-2xl">
+        {{ $t("why_fintory") }}?
+      </div>
       <div class="text-white w-2/4 text-center">{{ $t("vp") }}</div>
     </div>
     <div class="grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1">
@@ -496,7 +499,7 @@
         <!-- Pricing Card -->
         <div
           class="flex flex-col p-6 mx-auto max-w-lg text-center bg-gray-800 rounded-lg border shadow xl:p-8 text-white">
-          <h3 class="mb-4 text-2xl font-semibold"s>
+          <h3 class="mb-4 text-2xl font-semibold" s>
             {{ $t("yearly_package") }}
           </h3>
           <p class="font-light text-gray-500 sm:text-lg">
@@ -546,8 +549,10 @@
         </p>
         <form @submit.prevent="submitContactForm" class="space-y-4">
           <div>
-            <label for="email" class="block mb-2 text-sm font-medium text-white"
-              >{{$t("email")}}</label
+            <label
+              for="email"
+              class="block mb-2 text-sm font-medium text-white"
+              >{{ $t("email") }}</label
             >
             <input
               type="email"
@@ -561,7 +566,7 @@
             <label
               for="subject"
               class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-              >{{$t("subject")}}</label
+              >{{ $t("subject") }}</label
             >
             <input
               type="text"
@@ -586,8 +591,8 @@
           </div>
           <button
             type="submit"
-            class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg  sm:w-fit focus:ring-4 focus:outline-none focus:ring-primary bg-boldText">
-            {{$t("send_message")}}
+            class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg sm:w-fit focus:ring-4 focus:outline-none focus:ring-primary bg-boldText">
+            {{ $t("send_message") }}
           </button>
         </form>
       </div>

@@ -1,6 +1,6 @@
 <template>
   <hr class="" />
-  <div class="grid grid-cols-4 p-4">
+  <div class="grid grid-cols-4 py-4">
     <div>
       <img
         src="/assets/images/FintoryLogo.png"
