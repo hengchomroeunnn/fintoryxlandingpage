@@ -97,19 +97,19 @@
         </div>
       </div>
     </div>
-    <!-- Registration Section -->
-    <div class="pt-2 max-sm:col-span-1 max-lg:col-start-3 col-start-4">
+        <!-- Early Access Section -->
+        <div class="pt-2 col-start-4 max-sm:col-span-4 max-xl:col-span-1 max-xl:col-start-4 max-md:col-span-2 max-md:col-start-3">
       <h2 class="text-xl font-bold py-2">Early Access</h2>
-      <div class="flex space-x-2">
+      <div class="flex   max-md:space-y-0 max-md:flex-row max-md:space-x-2">
         <input
           id="email"
           v-model="email"
           type="text"
-          class="text-md px-2 h-[40px] border-2 border-gray-300 rounded-md focus:outline-none focus:border-primary"
+          class="text-md px-2 h-[40px] border-2 border-gray-300 rounded-md focus:outline-none focus:border-primary w-full"
           placeholder="name@gmail.com" />
         <button
           @click="submitEmail"
-          class="h-[40px] bg-primary px-4 rounded-md flex items-center justify-center">
+          class="h-[40px] bg-primary px-4 rounded-md flex items-center justify-center  max-md:w-auto">
           <Icon name="mingcute:send-fill" class="text-white"></Icon>
         </button>
       </div>
