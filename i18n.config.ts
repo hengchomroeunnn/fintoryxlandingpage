@@ -3,7 +3,7 @@ import kh from './locales/kh.json';
 
 export default defineI18nConfig(() => ({
   legacy: false,
-  locale: 'en',
+  locale: 'kh',
   messages: {
     en: en,
     kh: kh

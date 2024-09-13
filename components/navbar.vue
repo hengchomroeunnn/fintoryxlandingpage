@@ -82,8 +82,8 @@ const { locale } = useI18n();
 
 // Define flag icons for each locale
 const flags = {
-  en: "twemoji:flag-united-states",
-  kh: "twemoji:flag-cambodia",
+  kh: "twemoji:flag-united-states",
+  en: "twemoji:flag-cambodia",
 };
 
 // Computed property to get the current flag based on the locale
