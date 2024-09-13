@@ -5,33 +5,33 @@
       <img
         src="/assets/images/FintoryLogo.png"
         alt="logo"
-        class="max-md:w-[60px] max-xl:w-[100px] w-[100px]" />
+        class=" max-sm:w-[40px] max-md:w-[60px] max-xl:w-[100px] w-[100px]" />
     </div>
     <div>
       <NuxtLink
         to="#about-us"
-        class="text-primary  p-2 text-xl max-md:text-[16px] font-semibold"
+        class="text-primary max-sm:text-[10px]  p-2 text-xl max-md:text-[16px] font-semibold"
         >  {{$t("about_us")}}</NuxtLink
       >
     </div>
     <div>
       <NuxtLink
         to="#features"
-        class="text-primary  p-2 text-xl max-md:text-[16px] font-semibold"
+        class="text-primary max-sm:text-[10px]  p-2 text-xl max-md:text-[16px] font-semibold"
         >{{ $t("features") }}</NuxtLink
       >
     </div>
     <div>
       <NuxtLink
         to="#pricing"
-        class="text-primary  p-2 text-xl max-md:text-[16px] font-semibold"
+        class="text-primary max-sm:text-[10px]  p-2 text-xl max-md:text-[16px] font-semibold"
         >  {{$t("pricing")}}</NuxtLink
       >
     </div>
     <div>
       <NuxtLink
         to="#contact-us"
-        class="text-primary  p-2 text-xl max-md:text-[16px] font-semibold">
+        class="text-primar max-sm:text-[10px]  p-2 text-xl max-md:text-[16px] font-semibold">
         {{ $t('contact-us') }}
       </NuxtLink>
       <!-- <div>
