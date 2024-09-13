@@ -22,7 +22,7 @@
             <div class="flex justify-center items-center opacity-80">
               <div class="space-y-4">
                 <div
-                  class="text-[30px] text-white text-center w-[600px] max-sm:text-[14px] max-md:text-[18px] max-sm:w-[250px] max-md:w-[450px]">
+                  class="text-[30px] text-white text-center w-[600px] max-sm:text-[18px] max-sm:font-bold max-md:text-[22px] font-bold max-sm:w-[250px] max-md:w-[450px]">
                   {{ $t("headline") }}
                 </div>
                 <div
@@ -166,11 +166,11 @@
         </div>
       </div>
       <!-- Phone Image -->
-      <div class="w-1/2 relative z-10 max-sm:w-2/3">
+      <div class="w-1/2 relative max-sm:flex max-sm:items-center max-sm:justify-center z-10 max-sm:w-2/3">
         <img
           src="/assets/images/productadding.png"
           alt="Phone Image"
-          class="w-full h-auto object-cover" />
+          class="w-full max-sm:ml-16 h-auto object-cover " />
       </div>
     </div>
   </section>

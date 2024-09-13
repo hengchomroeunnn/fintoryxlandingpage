@@ -27,7 +27,7 @@
           :class="menuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'"
           class="transition-all duration-500 ease-in-out overflow-hidden md:overflow-visible md:flex md:max-h-full md:opacity-100 md:space-x-8 items-center">
           <ul
-            class="  flex flex-col md:flex-row  max-lg:space-x-6 space-x-12 space-y-2 md:space-y-0 items-center text-right max-md:items-end max-md:text-[16px] max-lg:text-[14px] text-[16px]">
+            class="  flex flex-col md:flex-row  max-lg:space-x-6 space-x-12 space-y-2 md:space-y-0 items-center text-right max-md:items-end max-md:text-[16px] max-lg:text-[14px] text-[16px] ">
             <li>
               <NuxtLink to="#about-us" class="hover:text-primary">{{
                 $t("about_us")
