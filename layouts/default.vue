@@ -4,6 +4,7 @@
     <Navbar />
     <slot />
     <Footer />
+    <Analytics />
   </div>
 </template>
 
