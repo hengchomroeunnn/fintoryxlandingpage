@@ -185,9 +185,9 @@
       <div class="text-3xl text-center font-bold text-primary max-sm:text-xl">
         {{ $t("feature") }}
       </div>
-      <div class="py-8 max-md:space-y-[40px] max-md:flex max-md:flex-col max-md:pl-10">
+      <div class="py-8 max-md:space-y-[40px] max-md:flex max-md:flex-col  max-sm:pl-10 max-md:pl-20">
         <div
-          class="grid grid-cols-2 max-md:grid-cols-1 justify-center items-center">
+          class="grid grid-cols-2   md:space-x-8 max-md:grid-cols-1 justify-center items-center">
           <div class="space-y-4">
             <div class="flex items-center">
               <div
@@ -210,7 +210,7 @@
           </div>
         </div>
         <div
-          class="grid grid-cols-2 max-md:grid-cols-1 justify-center items-center">
+          class="grid grid-cols-2  md:space-x-8 max-md:grid-cols-1 justify-center items-center">
           <div
             class="flex-col rounded-md flex items-center max-md:hidden justify-center shadow-lg p-8 text-white">
             <!-- Background Image -->
@@ -233,7 +233,7 @@
           </div>
         </div>
         <div
-          class="grid grid-cols-2 max-md:grid-cols-1 justify-center items-center">
+          class="grid grid-cols-2  md:space-x-8 max-md:grid-cols-1 justify-center items-center">
           <div class="space-y-4">
             <div class="flex items-center">
               <div
@@ -258,7 +258,7 @@
           </div>
         </div>
         <div
-          class="grid grid-cols-2 max-md:grid-cols-1 justify-center items-center">
+          class="grid grid-cols-2  md:space-x-8 max-md:grid-cols-1 justify-center items-center">
           <div
             class="flex-col rounded-md flex items-center max-md:hidden justify-center shadow-lg p-8 text-white">
             <!-- Background Image -->
@@ -283,7 +283,7 @@
           </div>
         </div>
         <div
-          class="grid grid-cols-2 max-md:grid-cols-1 justify-center items-center">
+          class="grid grid-cols-2  md:space-x-8 max-md:grid-cols-1 justify-center items-center">
           <div class="space-y-4">
             <div class="flex items-center">
               <div
@@ -306,7 +306,7 @@
           </div>
         </div>
         <div
-          class="grid grid-cols-2 max-md:grid-cols-1 justify-center items-center">
+          class="grid grid-cols-2  md:space-x-8 max-md:grid-cols-1 justify-center items-center">
           <div
             class="flex-col rounded-md flex items-center max-md:hidden justify-center shadow-lg p-8 text-white">
             <!-- Background Image -->
