@@ -185,7 +185,7 @@
       <div class="text-3xl text-center font-bold text-primary max-sm:text-xl">
         {{ $t("feature") }}
       </div>
-      <div class="py-10 max-md:space-y-[80px] max-md:flex max-md:flex-col">
+      <div class="py-8 max-md:space-y-[40px] max-md:flex max-md:flex-col max-md:pl-10">
         <div
           class="grid grid-cols-2 max-md:grid-cols-1 justify-center items-center">
           <div class="space-y-4">
@@ -342,7 +342,7 @@
       <div class="text-white w-2/4 text-center">{{ $t("vp") }}</div>
     </div>
     <div class="grid grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1">
-      <div class="p-8 space-y-2">
+      <div class="p-8 max-md:p-4 space-y-2">
         <div
           class="w-[50px] h-[50px] bg-white rounded-md flex justify-center items-center">
           <Icon
@@ -352,7 +352,7 @@
         <div class="text-white font-semibold">{{ $t("value_1") }}</div>
         <div class="text-white text-[14px]">{{ $t("smart_inventory") }}</div>
       </div>
-      <div class="p-8 space-y-2">
+      <div class="p-8 max-md:p-4 space-y-2">
         <div
           class="w-[50px] h-[50px] bg-white rounded-md flex justify-center items-center">
           <Icon
@@ -362,7 +362,7 @@
         <div class="text-white font-semibold">{{ $t("value_2") }}</div>
         <div class="text-white text-[14px]">{{ $t("profit") }}</div>
       </div>
-      <div class="p-8 space-y-2">
+      <div class="p-8 max-md:p-4 space-y-2">
         <div
           class="w-[50px] h-[50px] bg-white rounded-md flex justify-center items-center">
           <Icon
@@ -372,7 +372,7 @@
         <div class="text-white font-semibold">{{ $t("value_3") }}</div>
         <div class="text-white text-[14px]">{{ $t("AI_chat") }}</div>
       </div>
-      <div class="p-8 space-y-2">
+      <div class="p-8 max-md:p-4 space-y-2">
         <div
           class="w-[50px] h-[50px] bg-white rounded-md flex justify-center items-center">
           <Icon
@@ -382,7 +382,7 @@
         <div class="text-white font-semibold">{{ $t("value_4") }}</div>
         <div class="text-white text-[14px]">{{ $t("sustainability") }}</div>
       </div>
-      <div class="p-8 space-y-2">
+      <div class="p-8 max-md:p-4 space-y-2">
         <div
           class="w-[50px] h-[50px] bg-white rounded-md flex justify-center items-center">
           <Icon
@@ -392,7 +392,7 @@
         <div class="text-white font-semibold">{{ $t("value_5") }}</div>
         <div class="text-white text-[14px]">{{ $t("discounts") }}</div>
       </div>
-      <div class="p-8 space-y-2">
+      <div class="p-8 max-md:p-4 space-y-2">
         <div
           class="w-[50px] h-[50px] bg-white rounded-md flex justify-center items-center">
           <Icon
@@ -402,7 +402,7 @@
         <div class="text-white font-semibold">{{ $t("value_6") }}</div>
         <div class="text-white text-[14px]">{{ $t("installation") }}</div>
       </div>
-      <div class="p-8 space-y-2 lg:col-start-2">
+      <div class="p-8 max-md:p-4 space-y-2 lg:col-start-2">
         <div
           class="w-[50px] h-[50px] bg-white rounded-md flex justify-center items-center">
           <Icon

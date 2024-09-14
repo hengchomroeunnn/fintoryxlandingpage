@@ -1,6 +1,7 @@
 <template>
   <hr class="" />
   <div class="grid grid-cols-4 py-4">
+
     <div>
       <img
         src="/assets/images/FintoryLogo.png"
@@ -28,52 +29,7 @@
         >  {{$t("pricing")}}</NuxtLink
       >
     </div>
-    <!-- <div>
-      <NuxtLink
-        to="#contact-us"
-        class="text-primar max-sm:text-[10px]  p-2 text-xl max-md:text-[16px] font-semibold">
-        {{ $t('contact-us') }}
-      </NuxtLink>
-      <div>
-        <div class="">
-          <div>
-            <ul class="space-y-4">
-              <li>
-                <div class="flex space-x-2">
-                  <div>
-                    <Icon
-                      name="ph:phone-call-fill"
-                      class="bg-primary text-2xl"></Icon>
-                  </div>
-                  <div>+855 93 406 289</div>
-                </div>
-              </li>
-              <li>
-                <div class="flex space-x-2">
-                  <div>
-                    <Icon
-                      name="tabler:mail-filled"
-                      class="bg-primary text-2xl"></Icon>
-                  </div>
-                  <div>fintory.startup@gmail.com</div>
-                </div>
-              </li>
-              <li>
-                <div class="flex space-x-2">
-                  <div>
-                    <Icon name="bxs:map" class="bg-primary text-2xl"></Icon>
-                  </div>
-                  <div>
-                    CADT, 2nd Bridge Prek Leap, National Road Number 6, Phnom
-                    Penh
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div> -->
+    
         <!-- Early Access Section -->
         <div class="pt-2 col-start-4 max-sm:col-span-4 max-xl:col-span-2 max-xl:col-start-3 max-md:col-span-2 max-md:col-start-3">
       <h2 class="text-xl font-bold py-2">{{ $t("early_access") }}</h2>
