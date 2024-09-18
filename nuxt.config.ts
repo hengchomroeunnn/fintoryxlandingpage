@@ -29,8 +29,8 @@ export default defineNuxtConfig({
       sessionCookie: false,
     },
     config: {
-      apiKey: "AIzaSyBD_pILvWIrotuQZwe20joZDoYMWCWP3yg",
-      authDomain: "fintoryemail.firebaseapp.com",
+      apiKey: process.env.API_KEY,
+      authDomain: process.env.AUTH_DOMAIN,
       projectId: "fintoryemail",
       storageBucket: "fintoryemail.appspot.com",
       messagingSenderId: "374688381548",
@@ -38,4 +38,5 @@ export default defineNuxtConfig({
       measurementId: "G-YCSNM86PFK",
     },
   },
+  
 });

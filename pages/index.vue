@@ -84,7 +84,7 @@
                   d="m2.75 8.75l3.5 3.5l7-7.5" />
               </svg>
             </div>
-            <li class="text-text"> {{ $t("1") }}</li>
+            <li class="text-text">{{ $t("1") }}</li>
           </div>
           <div class="flex items-center">
             <div class="px-2 text-[#FFD700]">
@@ -102,7 +102,7 @@
                   d="m2.75 8.75l3.5 3.5l7-7.5" />
               </svg>
             </div>
-            <li class="text-text"> {{ $t("2") }}</li>
+            <li class="text-text">{{ $t("2") }}</li>
           </div>
           <div class="flex items-center">
             <div class="px-2 text-[#FFD700]">
@@ -120,7 +120,7 @@
                   d="m2.75 8.75l3.5 3.5l7-7.5" />
               </svg>
             </div>
-            <li class="text-text"> {{ $t("3") }}</li>
+            <li class="text-text">{{ $t("3") }}</li>
           </div>
           <div class="flex items-center">
             <div class="px-2 text-[#FFD700]">
@@ -138,7 +138,7 @@
                   d="m2.75 8.75l3.5 3.5l7-7.5" />
               </svg>
             </div>
-            <li class="text-text"> {{ $t("4") }}</li>
+            <li class="text-text">{{ $t("4") }}</li>
           </div>
           <div class="flex items-center">
             <div class="px-2 text-[#FFD700]">
@@ -156,7 +156,7 @@
                   d="m2.75 8.75l3.5 3.5l7-7.5" />
               </svg>
             </div>
-            <li class="text-text"> {{ $t("5") }}</li>
+            <li class="text-text">{{ $t("5") }}</li>
           </div>
         </ul>
         <div class="flex justify-center">
@@ -185,9 +185,10 @@
       <div class="text-3xl text-center font-bold text-primary max-sm:text-xl">
         {{ $t("feature") }}
       </div>
-      <div class="py-8 max-md:space-y-[40px] max-md:flex max-md:flex-col  max-sm:pl-10 max-md:pl-20">
+      <div
+        class="py-8 max-md:space-y-[40px] max-md:flex max-md:flex-col max-sm:pl-10 max-md:pl-20">
         <div
-          class="grid grid-cols-2   md:space-x-8 max-md:grid-cols-1 justify-center items-center">
+          class="grid grid-cols-2 md:space-x-8 max-md:grid-cols-1 justify-center items-center">
           <div class="space-y-4">
             <div class="flex items-center">
               <div
@@ -210,7 +211,7 @@
           </div>
         </div>
         <div
-          class="grid grid-cols-2  md:space-x-8 max-md:grid-cols-1 justify-center items-center">
+          class="grid grid-cols-2 md:space-x-8 max-md:grid-cols-1 justify-center items-center">
           <div
             class="flex-col rounded-md flex items-center max-md:hidden justify-center shadow-lg p-8 text-white">
             <!-- Background Image -->
@@ -233,7 +234,7 @@
           </div>
         </div>
         <div
-          class="grid grid-cols-2  md:space-x-8 max-md:grid-cols-1 justify-center items-center">
+          class="grid grid-cols-2 md:space-x-8 max-md:grid-cols-1 justify-center items-center">
           <div class="space-y-4">
             <div class="flex items-center">
               <div
@@ -258,7 +259,7 @@
           </div>
         </div>
         <div
-          class="grid grid-cols-2  md:space-x-8 max-md:grid-cols-1 justify-center items-center">
+          class="grid grid-cols-2 md:space-x-8 max-md:grid-cols-1 justify-center items-center">
           <div
             class="flex-col rounded-md flex items-center max-md:hidden justify-center shadow-lg p-8 text-white">
             <!-- Background Image -->
@@ -283,7 +284,7 @@
           </div>
         </div>
         <div
-          class="grid grid-cols-2  md:space-x-8 max-md:grid-cols-1 justify-center items-center">
+          class="grid grid-cols-2 md:space-x-8 max-md:grid-cols-1 justify-center items-center">
           <div class="space-y-4">
             <div class="flex items-center">
               <div
@@ -306,7 +307,7 @@
           </div>
         </div>
         <div
-          class="grid grid-cols-2  md:space-x-8 max-md:grid-cols-1 justify-center items-center">
+          class="grid grid-cols-2 md:space-x-8 max-md:grid-cols-1 justify-center items-center">
           <div
             class="flex-col rounded-md flex items-center max-md:hidden justify-center shadow-lg p-8 text-white">
             <!-- Background Image -->
@@ -555,12 +556,13 @@
               >{{ $t("phone_number") }}</label
             >
             <input
-              type="phone_number"
+              type="text"
               id="phone_number"
               v-model="phone_number"
               class="shadow-sm border text-sm rounded-lg block w-full p-2.5 bg-white border-white placeholder-gray-400 text-text focus:ring-primary focus:border-primary shadow-sm-light"
               placeholder="Your phone number or Telegram"
-              required />
+              required
+            />
           </div>
           <div>
             <label
@@ -571,10 +573,11 @@
             <input
               type="text"
               id="store"
-              v-model="subject"
+              v-model="store"
               class="shadow-sm border text-sm rounded-lg block w-full p-2.5 bg-white border-white placeholder-gray-400 text-text focus:ring-primary focus:border-primary shadow-sm-light"
               placeholder="Your store name"
-              required />
+              required
+            />
           </div>
           <div class="sm:col-span-2">
             <label
@@ -591,7 +594,7 @@
           </div>
           <button
             type="submit"
-            class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg sm:w-fit focus:ring-4 focus:outline-none focus:ring-primary  bg-gray-800">
+            class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg sm:w-fit focus:ring-4 focus:outline-none focus:ring-primary bg-gray-800">
             {{ $t("send_message") }}
           </button>
         </form>
@@ -626,15 +629,15 @@ import { collection, addDoc, Timestamp } from "firebase/firestore";
 export default {
   data() {
     return {
-      email: "",
-      subject: "",
+      phone_number: "",
+      store: "",
       message: "",
       showDialog: false, // State to show/hide dialog
     };
   },
   methods: {
     async submitContactForm() {
-      if (!this.email || !this.subject || !this.message) {
+      if (!this.phone_number || !this.store || !this.message) {
         alert("Please fill in all fields.");
         return;
       }
@@ -645,15 +648,15 @@ export default {
 
         // Add contact form data to Firestore
         await addDoc(collection(firestore, "message"), {
-          email: this.email,
-          subject: this.subject,
+          phone_number: this.phone_number,
+          store: this.store,
           message: this.message,
           timestamp: Timestamp.fromDate(new Date()), // Use Timestamp for Firestore dates
         });
 
         // Clear the form fields
-        this.email = "";
-        this.subject = "";
+        this.phone_number = "";
+        this.store = "";
         this.message = "";
 
         // Show success dialog
