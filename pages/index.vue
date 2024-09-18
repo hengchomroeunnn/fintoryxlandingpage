@@ -43,11 +43,11 @@
                 </a>
               </div>
               <div>
-                <a
-                  href="#"
+                <NuxtLink
+                  to="#contact-us"
                   class="inline-block text-white font-medium bg-primary px-6 py-3 rounded-lg max-sm:text-[12px] max-md:text-[14px] max-lg:text-[16px]">
                   {{ $t("register") }}
-                </a>
+                </NuxtLink>
               </div>
             </div>
           </div>
