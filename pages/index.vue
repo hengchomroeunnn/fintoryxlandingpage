@@ -435,7 +435,7 @@
             {{ $t("monthly_spend") }}
           </p>
           <div class="flex justify-center items-baseline my-8">
-            <span class="mr-2 text-5xl font-extrabold">$15</span>
+            <span class="mr-2 text-5xl font-extrabold">$30</span>
             <span class="text-gray-500">/{{ $t("month") }}</span>
           </div>
           <!-- List -->
@@ -471,7 +471,7 @@
             {{ $t("semaster_spend") }}
           </p>
           <div class="flex justify-center items-baseline my-8">
-            <span class="mr-2 text-5xl font-extrabold">$13</span>
+            <span class="mr-2 text-5xl font-extrabold">$28</span>
             <span class="text-gray-500">/{{ $t("month") }}</span>
           </div>
           <!-- List -->
@@ -507,7 +507,7 @@
             {{ $t("yearly_spend") }}
           </p>
           <div class="flex justify-center items-baseline my-8">
-            <span class="mr-2 text-5xl font-extrabold">$10</span>
+            <span class="mr-2 text-5xl font-extrabold">$25</span>
             <span class="text-gray-500">/{{ $t("month") }}</span>
           </div>
           <!-- List -->
